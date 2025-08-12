@@ -1,0 +1,52 @@
+* RC 低通滤波器 + AC 灵敏度分析（可复现测试用例）
+* Vin -> R1 -> Out -> C1 -> GND
+.param S_R1=1k
+.param S_C1=1u
+Vin in 0 AC 1
+R1  in out S_R1
+C1  out 0 S_C1 
+
+
+.control
+  * -------- 1) 常规 AC 扫频 + SENS --------
+  set wr_singlescale
+  set wr_vecnames
+  set filetype=ascii
+
+  run
+  * 计算 AC 灵敏度（根据你已有的 .ac 设置）
+  sens v(out) ac dec 20 10 1e6
+
+  * 现在当前 plot 就是灵敏度结果；可用 display 查看所有向量名：
+  * display
+
+  * -------- 2) 选定“要导出的灵敏度变量”并生成精简表 --------
+  * === 用户自选灵敏度向量（把名字替换为你在 display 里看到的确切名称）===
+  * 下面示例展示两项（请按需增删）：
+  * 假设这两个向量名为：S_R1 及 S_C1（请用你的真实名字替换）
+  * 你可以多复制几行 let S_xxx_mag / let S_xxx_phase_deg
+
+
+  * 同理：如果你还想要 v(out) 的幅相（可选）
+  let VOUT_mag        = abs(v(out))
+  let VOUT_phase_deg  = 180/pi*atan2(imag(v(out)), real(v(out)))
+
+  * -------- 3) 仅写出“精选的列”到 CSV --------
+  * 注意：wrdata 只能写“向量”，所以上面用 let 先把表达式生成向量
+  wrdata rc_sens_selected.csv frequency VOUT_mag VOUT_phase_deg \
+                              S_R1  \
+                              S_C1 
+
+  * -------- 4) 仅保存精选向量到 raw（可选） --------
+  * 把当前 plot 缩减为我们关心的向量集合，便于复核/共享
+  * 做法：先新建一个空 plot，然后把这些向量 copy 进去
+  setplot new
+  let frequency = frequency
+  let VOUT_mag = VOUT_mag
+  let VOUT_phase_deg = VOUT_phase_deg
+  let S_R1 = S_R1
+  let S_C1 = S_C1
+  write rc_sens_selected.raw
+
+  quit
+.endc
