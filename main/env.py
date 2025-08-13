@@ -6,8 +6,12 @@ import os
 import math
 import time
 import subprocess
+import hashlib
+import pickle
 from multiprocessing import Pool
-from typing import List, Tuple, Union
+from typing import List, Tuple, Union, Dict, Optional
+from functools import lru_cache
+from collections import OrderedDict
 
 import gym
 import numpy as np
@@ -31,6 +35,133 @@ PORT_FILES = ['port1_impeval.txt', 'port2_impeval.txt',
 
 # Generate ngspice commands
 COMMANDS = [["ngspice", file] for file in EXECUTE_FILES]
+
+# Cache configuration
+MAX_CACHE_SIZE = 100000  # Maximum number of cached results
+CACHE_DIR = '.cache'   # Directory for persistent cache files
+
+class RewardCache:
+    """Efficient caching system for reward calculations."""
+    
+    def __init__(self, max_size: int = MAX_CACHE_SIZE, cache_dir: str = CACHE_DIR):
+        self.max_size = max_size
+        self.cache_dir = cache_dir
+        self.memory_cache = OrderedDict()
+        self.param_cache = {}  # Cache for parameter file hashes
+        self.result_cache = {}  # Cache for SPICE simulation results
+        
+        # Create cache directory if it doesn't exist
+        if not os.path.exists(cache_dir):
+            os.makedirs(cache_dir, exist_ok=True)
+    
+    def _generate_hash(self, params: np.ndarray) -> str:
+        """Generate a hash for the given capacitor parameters."""
+        # Convert to bytes and create hash
+        params_bytes = params.tobytes()
+        return hashlib.md5(params_bytes).hexdigest()
+    
+    def _get_cache_key(self, env_idx: int, params: np.ndarray) -> str:
+        """Generate a cache key combining environment index and parameters."""
+        param_hash = self._generate_hash(params)
+        return f"env_{env_idx}_{param_hash}"
+    
+    def get(self, env_idx: int, params: np.ndarray) -> Optional[Tuple[float, np.ndarray]]:
+        """Get cached reward and impedance results."""
+        cache_key = self._get_cache_key(env_idx, params)
+        
+        # Check memory cache first
+        if cache_key in self.memory_cache:
+            # Move to end (LRU)
+            result = self.memory_cache.pop(cache_key)
+            self.memory_cache[cache_key] = result
+            return result
+        
+        # Check persistent cache
+        cache_file = os.path.join(self.cache_dir, f"{cache_key}.pkl")
+        if os.path.exists(cache_file):
+            try:
+                with open(cache_file, 'rb') as f:
+                    result = pickle.load(f)
+                # Add to memory cache
+                self._add_to_memory_cache(cache_key, result)
+                return result
+            except (pickle.PickleError, EOFError):
+                # Remove corrupted cache file
+                os.remove(cache_file)
+        
+        return None
+    
+    def put(self, env_idx: int, params: np.ndarray, reward: float, impedances: np.ndarray) -> None:
+        """Cache reward and impedance results."""
+        cache_key = self._get_cache_key(env_idx, params)
+        result = (reward, impedances)
+        
+        # Add to memory cache
+        self._add_to_memory_cache(cache_key, result)
+        
+        # Save to persistent cache
+        cache_file = os.path.join(self.cache_dir, f"{cache_key}.pkl")
+        try:
+            with open(cache_file, 'wb') as f:
+                pickle.dump(result, f)
+        except (IOError, OSError):
+            # Ignore cache write errors
+            pass
+    
+    def _add_to_memory_cache(self, key: str, value: Tuple) -> None:
+        """Add item to memory cache with LRU eviction."""
+        if key in self.memory_cache:
+            self.memory_cache.pop(key)
+        elif len(self.memory_cache) >= self.max_size:
+            # Remove least recently used item
+            self.memory_cache.popitem(last=False)
+        
+        self.memory_cache[key] = value
+    
+    def clear(self) -> None:
+        """Clear all caches."""
+        self.memory_cache.clear()
+        self.param_cache.clear()
+        self.result_cache.clear()
+        
+        # Clear persistent cache files
+        if os.path.exists(self.cache_dir):
+            for file in os.listdir(self.cache_dir):
+                if file.endswith('.pkl'):
+                    os.remove(os.path.join(self.cache_dir, file))
+
+class ParameterFileCache:
+    """Cache for parameter file contents to avoid repeated file writes."""
+    
+    def __init__(self):
+        self.file_cache = {}
+    
+    def _generate_param_hash(self, str_dc: str, esrs: str) -> str:
+        """Generate hash for parameter file contents."""
+        content = f"{str_dc}|{esrs}"
+        return hashlib.md5(content.encode()).hexdigest()
+    
+    def get_file_path(self, env_path: str, str_dc: str, esrs: str) -> str:
+        """Get cached file path or create new parameter files."""
+        param_hash = self._generate_param_hash(str_dc, esrs)
+        cache_key = f"{env_path}_{param_hash[:8]}"
+        
+        if cache_key in self.file_cache:
+            return self.file_cache[cache_key]
+        
+        # Create new parameter files
+        param_dir = os.path.join(env_path, f"params_{param_hash[:8]}")
+        if not os.path.exists(param_dir):
+            os.makedirs(param_dir, exist_ok=True)
+            
+            with open(os.path.join(param_dir, 'int_param_dcap.txt'), 'w') as f:
+                f.write(str_dc)
+                
+            with open(os.path.join(param_dir, 'moscap_esr.txt'), 'w') as f:
+                f.write(esrs)
+        
+        self.file_cache[cache_key] = param_dir
+        return param_dir
 
 def run_os(path: str) -> None:
     """Execute ngspice commands in the specified directory."""
@@ -106,6 +237,10 @@ class DecapPlaceParallel(gym.Env):
             
         self.env_count = len(idx_list)
         self.config_names = self._generate_config_names(idx_list, config_prefix)
+        
+        # Initialize caching systems
+        self.reward_cache = RewardCache()
+        self.param_file_cache = ParameterFileCache()
         
         # Initialize environment vectors
         self._initialize_vectors()
@@ -322,7 +457,7 @@ class DecapPlaceParallel(gym.Env):
             raise IOError(f"Failed to write parameter files to {env_path}: {e}")
 
     def cal_reward(self, env_idx: int) -> Tuple[int, float, np.ndarray]:
-        """Calculate reward for a single environment.
+        """Calculate reward for a single environment with caching.
         
         Args:
             env_idx: Environment index
@@ -330,18 +465,23 @@ class DecapPlaceParallel(gym.Env):
         Returns:
             Tuple of (env_idx, reward, impedance_array)
         """
+        # Check cache first
+        cached_result = self.reward_cache.get(env_idx, self.vec_cur_params_idx[env_idx])
+        if cached_result is not None:
+            return env_idx, cached_result[0], cached_result[1]
+        
         # Generate parameter strings for SPICE simulation
         str_dc, esrs = self._generate_spice_params(env_idx)
         
-        # Write parameter files
+        # Use parameter file cache to avoid repeated file writes
         env_path = os.path.join(self.vec_path[env_idx], str(env_idx))
-        self._write_param_files(env_path, str_dc, esrs)
+        param_dir = self.param_file_cache.get_file_path(env_path, str_dc, esrs)
 
         # Run SPICE simulation
-        run_os(env_path + '/')
+        run_os(param_dir + '/')
 
         # Read simulation results
-        port_impedances = self._read_port_results(env_path)
+        port_impedances = self._read_port_results(param_dir)
         
         # Calculate maximum impedance across all ports
         max_impedances = np.maximum.reduce(port_impedances)
@@ -358,6 +498,9 @@ class DecapPlaceParallel(gym.Env):
 
         # Calculate total cost
         total_cost = self._calculate_cost(env_idx, max_violation)
+        
+        # Cache the result
+        self.reward_cache.put(env_idx, self.vec_cur_params_idx[env_idx], total_cost, all_impedance_vals)
 
         return env_idx, total_cost, all_impedance_vals
     
@@ -498,6 +641,35 @@ class DecapPlaceParallel(gym.Env):
             _, vec_action_mask = map(list, zip(*[self.action_mask(i) for i in arg_list]))
 
         return vec_action_mask
+    
+    def clear_cache(self) -> None:
+        """Clear all caches to free memory and disk space."""
+        self.reward_cache.clear()
+        self.param_file_cache.file_cache.clear()
+    
+    def get_cache_stats(self) -> Dict[str, int]:
+        """Get statistics about cache usage."""
+        return {
+            'memory_cache_size': len(self.reward_cache.memory_cache),
+            'param_file_cache_size': len(self.param_file_cache.file_cache),
+            'total_cached_results': len(self.reward_cache.memory_cache)
+        }
+    
+    def precompute_common_configs(self) -> None:
+        """Precompute and cache common capacitor configurations for faster access."""
+        print("Precomputing common configurations...")
+        
+        # Common configurations: single capacitor placements
+        for env_idx in range(self.env_count):
+            for cap_idx in range(self.vec_NCAP[env_idx]):
+                # Create single capacitor configuration
+                test_params = np.zeros(self.vec_NCAP[env_idx], dtype=np.int32)
+                test_params[cap_idx] = DEFAULT_CAP_VALUE
+                
+                # This will trigger computation and caching
+                self.cal_reward(env_idx)
+        
+        print("Precomputation complete!")
 
 
 if __name__ == "__main__":
