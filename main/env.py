@@ -130,38 +130,7 @@ class RewardCache:
                 if file.endswith('.pkl'):
                     os.remove(os.path.join(self.cache_dir, file))
 
-class ParameterFileCache:
-    """Cache for parameter file contents to avoid repeated file writes."""
-    
-    def __init__(self):
-        self.file_cache = {}
-    
-    def _generate_param_hash(self, str_dc: str, esrs: str) -> str:
-        """Generate hash for parameter file contents."""
-        content = f"{str_dc}|{esrs}"
-        return hashlib.md5(content.encode()).hexdigest()
-    
-    def get_file_path(self, env_path: str, str_dc: str, esrs: str) -> str:
-        """Get cached file path or create new parameter files."""
-        param_hash = self._generate_param_hash(str_dc, esrs)
-        cache_key = f"{env_path}_{param_hash[:8]}"
-        
-        if cache_key in self.file_cache:
-            return self.file_cache[cache_key]
-        
-        # Create new parameter files
-        param_dir = os.path.join(env_path, f"params_{param_hash[:8]}")
-        if not os.path.exists(param_dir):
-            os.makedirs(param_dir, exist_ok=True)
-            
-            with open(os.path.join(param_dir, 'int_param_dcap.txt'), 'w') as f:
-                f.write(str_dc)
-                
-            with open(os.path.join(param_dir, 'moscap_esr.txt'), 'w') as f:
-                f.write(esrs)
-        
-        self.file_cache[cache_key] = param_dir
-        return param_dir
+
 
 def run_os(path: str) -> None:
     """Execute ngspice commands in the specified directory."""
@@ -240,7 +209,6 @@ class DecapPlaceParallel(gym.Env):
         
         # Initialize caching systems
         self.reward_cache = RewardCache()
-        self.param_file_cache = ParameterFileCache()
         
         # Initialize environment vectors
         self._initialize_vectors()
@@ -473,9 +441,17 @@ class DecapPlaceParallel(gym.Env):
         # Generate parameter strings for SPICE simulation
         str_dc, esrs = self._generate_spice_params(env_idx)
         
-        # Use parameter file cache to avoid repeated file writes
-        env_path = os.path.join(self.vec_path[env_idx], str(env_idx))
-        param_dir = self.param_file_cache.get_file_path(env_path, str_dc, esrs)
+        # Create parameter files directly
+        param_dir = os.path.join(self.vec_path[env_idx], str(env_idx))
+        
+        if not os.path.exists(param_dir):
+            os.makedirs(param_dir, exist_ok=True)
+            
+            with open(os.path.join(param_dir, 'int_param_dcap.txt'), 'w') as f:
+                f.write(str_dc)
+                
+            with open(os.path.join(param_dir, 'moscap_esr.txt'), 'w') as f:
+                f.write(esrs)
 
         # Run SPICE simulation
         run_os(param_dir + '/')
@@ -645,13 +621,11 @@ class DecapPlaceParallel(gym.Env):
     def clear_cache(self) -> None:
         """Clear all caches to free memory and disk space."""
         self.reward_cache.clear()
-        self.param_file_cache.file_cache.clear()
     
     def get_cache_stats(self) -> Dict[str, int]:
         """Get statistics about cache usage."""
         return {
             'memory_cache_size': len(self.reward_cache.memory_cache),
-            'param_file_cache_size': len(self.param_file_cache.file_cache),
             'total_cached_results': len(self.reward_cache.memory_cache)
         }
     
