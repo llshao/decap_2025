@@ -21,7 +21,7 @@ def get_args() -> Any:
         help="Step size for step-based learning rate decay")
     parser.add_argument("--lr-gamma", type=float, default=0.9,
         help="Multiplicative factor for step-based learning rate decay")
-    parser.add_argument("--lr-warmup-steps", type=int, default=0,
+    parser.add_argument("--lr-warmup-steps", type=int, default=50,
         help="Number of warmup steps with linearly increasing learning rate")
     parser.add_argument("--lr-min", type=float, default=1e-6,
         help="Minimum learning rate")
