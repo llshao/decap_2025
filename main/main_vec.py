@@ -157,6 +157,3 @@ if __name__ == '__main__':
     np.savetxt(path + 'pgloss.txt', pg_loss)
     np.savetxt(path + 'entloss.txt', entropy_loss)
     np.savetxt(path + 'vloss.txt', v_loss)
-
-
-

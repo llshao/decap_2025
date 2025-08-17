@@ -274,7 +274,7 @@ class DecapPlaceParallel(gym.Env):
         intp_mask = np.ones(NCOL * NROW, dtype=float)
         chip_mask = np.zeros(NCOL * NROW, dtype=float)
         
-        # Set interposer mask (0 where capacitors can be placed)
+        # Set interposer mask (0 where capacitors can not be placed)
         intp_mask[self.vec_intp_n[env_idx]] = 0
         
         # Set chip mask (1 where capacitors can be placed)
