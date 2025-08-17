@@ -30,7 +30,7 @@ def get_args() -> Any:
         help="the number of steps to run in each environment per policy rollout")
     parser.add_argument("--case-idx", type=int, default=4,
         help="the idx of parallel environments")
-    parser.add_argument("--num-envs", type=int, default=4,
+    parser.add_argument("--num-envs", type=int, default=10,
                         help="the number of parallel environments")
     parser.add_argument("--gae", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
         help="Use GAE for advantage computation")
