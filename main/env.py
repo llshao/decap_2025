@@ -60,14 +60,14 @@ class RewardCache:
         params_bytes = params.tobytes()
         return hashlib.md5(params_bytes).hexdigest()
     
-    def _get_cache_key(self, env_idx: int, params: np.ndarray) -> str:
+    def _get_cache_key(self, env_case_num: int, params: np.ndarray) -> str:
         """Generate a cache key combining environment index and parameters."""
         param_hash = self._generate_hash(params)
-        return f"env_{env_idx}_{param_hash}"
+        return f"env_{env_case_num}_{param_hash}"
     
-    def get(self, env_idx: int, params: np.ndarray) -> Optional[Tuple[float, np.ndarray]]:
+    def get(self, env_case_num: int, params: np.ndarray) -> Optional[Tuple[float, np.ndarray]]:
         """Get cached reward and impedance results."""
-        cache_key = self._get_cache_key(env_idx, params)
+        cache_key = self._get_cache_key(env_case_num, params)
         
         # Check memory cache first
         if cache_key in self.memory_cache:
@@ -91,9 +91,9 @@ class RewardCache:
         
         return None
     
-    def put(self, env_idx: int, params: np.ndarray, reward: float, impedances: np.ndarray) -> None:
+    def put(self, env_case_num: int, params: np.ndarray, reward: float, impedances: np.ndarray) -> None:
         """Cache reward and impedance results."""
-        cache_key = self._get_cache_key(env_idx, params)
+        cache_key = self._get_cache_key(env_case_num, params)
         result = (reward, impedances)
         
         # Add to memory cache
@@ -216,7 +216,8 @@ class DecapPlaceParallel(gym.Env):
         # Load configurations for each environment
         for i, config_file in enumerate(self.config_names):
             self._get_single_system(i, config_file)
-            
+        # add original idx_list to the class
+        self.env_case_num = idx_list
         # Generate masks for all environments
         self.vec_intp_mask, self.vec_chip_mask, self.vec_mask = self.vec_gen_mask()
     
@@ -239,6 +240,7 @@ class DecapPlaceParallel(gym.Env):
         self.vec_target_imped = []
         self.vec_sense = []
         self.vec_his_reward = []
+        self.env_case_num = []
 
     def _get_single_system(self, idx: int, filename: str) -> None:
         """Load configuration for a single environment system.
@@ -256,7 +258,6 @@ class DecapPlaceParallel(gym.Env):
         self.vec_intp_n.append(intp_n)
         self.vec_chip_n.append(chip_n)
         self.vec_target_imped.append(get_target_imped())
-        
         # Load sense impact data
         sense_file = os.path.join(path, 'sense_impact1.txt')
         self.vec_sense.append(np.loadtxt(sense_file))
@@ -434,7 +435,7 @@ class DecapPlaceParallel(gym.Env):
             Tuple of (env_idx, reward, impedance_array)
         """
         # Check cache first
-        cached_result = self.reward_cache.get(env_idx, self.vec_cur_params_idx[env_idx])
+        cached_result = self.reward_cache.get(self.env_case_num[env_idx], self.vec_cur_params_idx[env_idx])
         if cached_result is not None:
             return env_idx, cached_result[0], cached_result[1]
         
@@ -476,7 +477,7 @@ class DecapPlaceParallel(gym.Env):
         total_cost = self._calculate_cost(env_idx, max_violation)
         
         # Cache the result
-        self.reward_cache.put(env_idx, self.vec_cur_params_idx[env_idx], total_cost, all_impedance_vals)
+        self.reward_cache.put(self.env_case_num[env_idx], self.vec_cur_params_idx[env_idx], total_cost, all_impedance_vals)
 
         return env_idx, total_cost, all_impedance_vals
     
