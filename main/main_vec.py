@@ -56,6 +56,26 @@ if __name__ == '__main__':
     logging.info("===========================================")
     logging.info("Environment: {}, Parallel Number: {}" .format(args.case_idx, args.num_envs))
     logging.info(f'Using GPU: {device}, {args.GPU}')
+    logging.info(f'Learning Rate: {args.learning_rate:.2e}')
+    logging.info(f'LR Schedule: {args.lr_schedule}')
+    if args.lr_schedule == "exponential":
+        logging.info(f'LR Anneal Factor: {args.anneal_lr_value}')
+    elif args.lr_schedule == "step":
+        logging.info(f'LR Step Size: {args.lr_step_size}, LR Gamma: {args.lr_gamma}')
+    elif args.lr_schedule == "cosine":
+        logging.info(f'LR Min: {args.lr_min}')
+    elif args.lr_schedule == "cosine_warmup":
+        logging.info(f'LR Step Size: {args.lr_step_size}, LR Cycle Mult: {args.lr_cycle_mult}, LR Min: {args.lr_min}')
+    elif args.lr_schedule == "onecycle":
+        logging.info(f'LR Max: {args.lr_max}')
+    elif args.lr_schedule == "plateau":
+        logging.info(f'LR Patience: {args.lr_patience}, LR Factor: {args.lr_factor}, LR Min: {args.lr_min}')
+    elif args.lr_schedule == "cyclic":
+        logging.info(f'LR Max: {args.lr_max}, LR Step Size: {args.lr_step_size}')
+    elif args.lr_schedule == "restart":
+        logging.info(f'LR Step Size: {args.lr_step_size}, LR Cycle Mult: {args.lr_cycle_mult}, LR Min: {args.lr_min}')
+    elif args.lr_schedule == "linear":
+        logging.info(f'LR Warmup Steps: {args.lr_warmup_steps}, LR Min: {args.lr_min}')
     logging.info("================ Training =================")
 
 
@@ -72,6 +92,7 @@ if __name__ == '__main__':
     entropy_loss = np.zeros(num_updates)
     v_loss = np.zeros(num_updates)
     rewards = np.zeros((num_updates, args.num_steps * args.num_envs))
+    learning_rates = np.zeros(num_updates)  # Track learning rates
     BEST = [-50, 0, 0]  # reward, updates, steps
     BEST_Allocation = np.zeros([])
 
@@ -138,9 +159,16 @@ if __name__ == '__main__':
                                                                                                            args.num_steps,
                                                                                                            vec_env.SINGLE_OBSERVATION_SPACE_SHAPE,
                                                                                                            vec_env.ACTION_SPACE_SHAPE)
+        
+        # Step learning rate scheduler
+        current_reward = max(info["reward_now"]) if info["reward_now"] else 0.0
+        current_lr = agent.step_lr_scheduler(update, current_reward)
+        learning_rates[update - 1] = current_lr
+        
         rewards[update - 1] = rollouts.rewards.cpu().numpy().reshape(-1)
 
         logging.info(f"-------------------- Update {update} --------------------")
+        logging.info(f'Current Learning Rate: {current_lr:.2e}')
         logging.info('Best Update :{}, Best Step :{}, Best Reward: {}'.format( BEST[1], BEST[2], BEST[0]))
         np.savetxt(path + 'allocation.txt', BEST_Allocation)
 
@@ -157,3 +185,4 @@ if __name__ == '__main__':
     np.savetxt(path + 'pgloss.txt', pg_loss)
     np.savetxt(path + 'entloss.txt', entropy_loss)
     np.savetxt(path + 'vloss.txt', v_loss)
+    np.savetxt(path + 'learning_rates.txt', learning_rates)

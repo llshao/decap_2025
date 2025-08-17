@@ -10,8 +10,31 @@ def get_args() -> Any:
 
     parser.add_argument("--learning-rate", type=float, default=2.5e-4,
         help="the learning rate of the optimizer")
-    parser.add_argument("--anneal-lr-value", type=float, default=0.9997,
+    parser.add_argument("--anneal-lr", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
         help="Toggle learning rate annealing for policy and value networks")
+    parser.add_argument("--anneal-lr-value", type=float, default=0.9997,
+        help="Learning rate annealing factor for exponential decay")
+    parser.add_argument("--lr-schedule", type=str, default="cyclic", 
+        choices=["exponential", "step", "cosine", "linear", "cosine_warmup", "onecycle", "plateau", "cyclic", "restart"],
+        help="Learning rate scheduling strategy")
+    parser.add_argument("--lr-step-size", type=int, default=100,
+        help="Step size for step-based learning rate decay")
+    parser.add_argument("--lr-gamma", type=float, default=0.9,
+        help="Multiplicative factor for step-based learning rate decay")
+    parser.add_argument("--lr-warmup-steps", type=int, default=0,
+        help="Number of warmup steps with linearly increasing learning rate")
+    parser.add_argument("--lr-min", type=float, default=1e-6,
+        help="Minimum learning rate")
+    parser.add_argument("--lr-max", type=float, default=1e-3,
+        help="Maximum learning rate for cyclic and onecycle schedules")
+    parser.add_argument("--lr-patience", type=int, default=10,
+        help="Patience for plateau scheduler (number of updates without improvement)")
+    parser.add_argument("--lr-factor", type=float, default=0.5,
+        help="Factor for plateau scheduler reduction")
+    parser.add_argument("--lr-cycles", type=int, default=3,
+        help="Number of cycles for cyclic and restart schedulers")
+    parser.add_argument("--lr-cycle-mult", type=float, default=2.0,
+        help="Cycle length multiplier for restart scheduler")
     parser.add_argument("--seed", type=int, default=1,
         help="seed of the experiment")
     parser.add_argument("--total-timesteps", type=int, default=5000000,
@@ -28,7 +51,7 @@ def get_args() -> Any:
     # Algorithm specific arguments
     parser.add_argument("--num-steps", type=int, default=128,
         help="the number of steps to run in each environment per policy rollout")
-    parser.add_argument("--case-idx", type=int, default=5,
+    parser.add_argument("--case-idx", type=int, default=4,
         help="the idx of parallel environments")
     parser.add_argument("--num-envs", type=int, default=10,
                         help="the number of parallel environments")

@@ -19,7 +19,51 @@ class PPO():
         self.target_kl = args.target_kl
 
         self.optimizer = optim.Adam(self.actor_critic.parameters(), lr=args.learning_rate, eps=1e-5)
-        self.lr_scheduler = optim.lr_scheduler.ExponentialLR(self.optimizer, args.anneal_lr_value)
+        self.initial_lr = args.learning_rate
+        self.lr_schedule = args.lr_schedule
+        self.lr_step_size = args.lr_step_size
+        self.lr_gamma = args.lr_gamma
+        self.lr_warmup_steps = args.lr_warmup_steps
+        self.lr_min = args.lr_min
+        self.lr_max = args.lr_max
+        self.lr_patience = args.lr_patience
+        self.lr_factor = args.lr_factor
+        self.lr_cycles = args.lr_cycles
+        self.lr_cycle_mult = args.lr_cycle_mult
+        self.current_step = 0
+        self.best_reward = float('-inf')
+        self.plateau_counter = 0
+        
+        # Initialize learning rate scheduler based on strategy
+        if args.lr_schedule == "exponential":
+            self.lr_scheduler = optim.lr_scheduler.ExponentialLR(self.optimizer, args.anneal_lr_value)
+        elif args.lr_schedule == "step":
+            self.lr_scheduler = optim.lr_scheduler.StepLR(self.optimizer, step_size=args.lr_step_size, gamma=args.lr_gamma)
+        elif args.lr_schedule == "cosine":
+            self.lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(self.optimizer, T_max=1000, eta_min=args.lr_min)
+        elif args.lr_schedule == "cosine_warmup":
+            self.lr_scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
+                self.optimizer, T_0=args.lr_step_size, T_mult=args.lr_cycle_mult, eta_min=args.lr_min)
+        elif args.lr_schedule == "onecycle":
+            self.lr_scheduler = optim.lr_scheduler.OneCycleLR(
+                self.optimizer, max_lr=args.lr_max, total_steps=1000, 
+                pct_start=0.3, anneal_strategy='cos', div_factor=25.0, final_div_factor=1e4)
+        elif args.lr_schedule == "plateau":
+            self.lr_scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+                self.optimizer, mode='max', factor=args.lr_factor, patience=args.lr_patience, 
+                min_lr=args.lr_min, verbose=True)
+        elif args.lr_schedule == "cyclic":
+            self.lr_scheduler = optim.lr_scheduler.CyclicLR(
+                self.optimizer, base_lr=args.lr_min, max_lr=args.lr_max, 
+                step_size_up=args.lr_step_size, step_size_down=args.lr_step_size,
+                mode='triangular', cycle_momentum=False)
+        elif args.lr_schedule == "restart":
+            self.lr_scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
+                self.optimizer, T_0=args.lr_step_size, T_mult=args.lr_cycle_mult, eta_min=args.lr_min)
+        elif args.lr_schedule == "linear":
+            self.lr_scheduler = None  # Custom linear scheduler
+        else:
+            self.lr_scheduler = optim.lr_scheduler.ExponentialLR(self.optimizer, args.anneal_lr_value)
 
     def update(self, rollouts, num_steps, obs_shape, action_shape):
 
@@ -87,7 +131,6 @@ class PPO():
                 loss.backward()
                 nn.utils.clip_grad_norm_(self.actor_critic.parameters(), self.max_grad_norm)
                 self.optimizer.step()
-                self.lr_scheduler.step()
 
                 v_loss_epoch += v_loss.item()
                 pg_loss_epoch += pg_loss.item()
@@ -106,3 +149,53 @@ class PPO():
         loss_epoch /= num_updates
 
         return v_loss_epoch, pg_loss_epoch, entropy_loss_epoch, loss_epoch
+    
+    def step_lr_scheduler(self, update_step: int, current_reward: float = None) -> float:
+        """Step the learning rate scheduler and return current learning rate."""
+        self.current_step = update_step
+        
+        if self.lr_schedule == "linear":
+            # Custom linear decay
+            if update_step < self.lr_warmup_steps:
+                # Warmup phase: linearly increase from 0 to initial_lr
+                lr = self.initial_lr * (update_step / self.lr_warmup_steps)
+            else:
+                # Linear decay phase
+                progress = (update_step - self.lr_warmup_steps) / max(1, 1000 - self.lr_warmup_steps)
+                lr = self.initial_lr * (1.0 - progress * 0.9)  # Decay to 10% of initial LR
+                lr = max(lr, self.lr_min)
+            
+            # Update optimizer learning rate
+            for param_group in self.optimizer.param_groups:
+                param_group['lr'] = lr
+                
+        elif self.lr_schedule == "plateau":
+            # Plateau scheduler needs reward information
+            if current_reward is not None:
+                if current_reward > self.best_reward:
+                    self.best_reward = current_reward
+                    self.plateau_counter = 0
+                else:
+                    self.plateau_counter += 1
+                
+                # Step the scheduler with the reward metric
+                self.lr_scheduler.step(current_reward)
+            lr = self.optimizer.param_groups[0]['lr']
+            
+        elif self.lr_schedule == "onecycle":
+            # OneCycle scheduler steps every batch, so we step it here
+            self.lr_scheduler.step()
+            lr = self.optimizer.param_groups[0]['lr']
+            
+        elif self.lr_scheduler is not None:
+            # Use PyTorch scheduler
+            self.lr_scheduler.step()
+            lr = self.optimizer.param_groups[0]['lr']
+        else:
+            lr = self.optimizer.param_groups[0]['lr']
+        
+        return lr
+    
+    def get_current_lr(self) -> float:
+        """Get current learning rate."""
+        return self.optimizer.param_groups[0]['lr']

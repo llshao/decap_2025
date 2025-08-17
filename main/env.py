@@ -37,7 +37,7 @@ PORT_FILES = ['port1_impeval.txt', 'port2_impeval.txt',
 COMMANDS = [["ngspice", file] for file in EXECUTE_FILES]
 
 # Cache configuration
-MAX_CACHE_SIZE = 100000  # Maximum number of cached results
+MAX_CACHE_SIZE = 200000  # Maximum number of cached results
 CACHE_DIR = '.cache'   # Directory for persistent cache files
 
 class RewardCache:
