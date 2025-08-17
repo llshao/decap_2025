@@ -441,24 +441,16 @@ class DecapPlaceParallel(gym.Env):
         
         # Generate parameter strings for SPICE simulation
         str_dc, esrs = self._generate_spice_params(env_idx)
-        
-        # Create parameter files directly
-        param_dir = os.path.join(self.vec_path[env_idx], str(env_idx))
-        
-        if not os.path.exists(param_dir):
-            os.makedirs(param_dir, exist_ok=True)
-            
-            with open(os.path.join(param_dir, 'int_param_dcap.txt'), 'w') as f:
-                f.write(str_dc)
-                
-            with open(os.path.join(param_dir, 'moscap_esr.txt'), 'w') as f:
-                f.write(esrs)
+
+        # Write parameter files
+        env_path = os.path.join(self.vec_path[env_idx], str(env_idx))
+        self._write_param_files(env_path, str_dc, esrs)
 
         # Run SPICE simulation
-        run_os(param_dir + '/')
+        run_os(env_path + '/')
 
         # Read simulation results
-        port_impedances = self._read_port_results(param_dir)
+        port_impedances = self._read_port_results(env_path)
         
         # Calculate maximum impedance across all ports
         max_impedances = np.maximum.reduce(port_impedances)
