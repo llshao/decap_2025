@@ -425,6 +425,37 @@ class DecapPlaceParallel(gym.Env):
         except (OSError, IOError) as e:
             raise IOError(f"Failed to write parameter files to {env_path}: {e}")
 
+    
+    def _read_port_results(self, env_path: str) -> List[np.ndarray]:
+        """Read impedance results from all port files."""
+        port_impedances = []
+        for i in range(1, 5):  # ports 1-4
+            port_file = os.path.join(env_path, f'port{i}_impeval.txt')
+            port_data = readresult(port_file)
+            port_impedances.append(port_data[:, 1])  # impedance values
+        return port_impedances
+    
+    def _calculate_cost(self, env_idx: int, max_violation: float) -> float:
+        """Calculate the cost/reward based on impedance violation and capacitor usage."""
+        if max_violation == 0:
+            # No impedance violation - reward based on capacitor efficiency
+            intp_cap_total = sum(val for val in self.vec_cur_params_idx[env_idx][:self.vec_intp_mim[env_idx]] if val > 0)
+            chip_cap_total = sum(val * MOS_CAP_SCALING for val in self.vec_cur_params_idx[env_idx][self.vec_intp_mim[env_idx]:] if val > 0)
+            
+            # Calculate efficiency metrics (higher is better)
+            intp_max_capacity = self.vec_intp_mim[env_idx] * DEFAULT_CAP_VALUE
+            chip_max_capacity = self.vec_chip_mos[env_idx] * 500  # Different max capacity for chip caps
+            
+            intp_efficiency = (intp_max_capacity - intp_cap_total) / intp_max_capacity
+            chip_efficiency = (chip_max_capacity - chip_cap_total) / chip_max_capacity
+            
+            total_cost = 0.5 * intp_efficiency + 0.5 * chip_efficiency
+        else:
+            # Impedance violation penalty
+            total_cost = COST_PENALTY * max_violation
+
+        return total_cost
+
     def cal_reward(self, env_idx: int) -> Tuple[int, float, np.ndarray]:
         """Calculate reward for a single environment with caching.
         
@@ -472,36 +503,6 @@ class DecapPlaceParallel(gym.Env):
         self.reward_cache.put(self.env_case_num[env_idx], self.vec_cur_params_idx[env_idx], total_cost, all_impedance_vals)
 
         return env_idx, total_cost, all_impedance_vals
-    
-    def _read_port_results(self, env_path: str) -> List[np.ndarray]:
-        """Read impedance results from all port files."""
-        port_impedances = []
-        for i in range(1, 5):  # ports 1-4
-            port_file = os.path.join(env_path, f'port{i}_impeval.txt')
-            port_data = readresult(port_file)
-            port_impedances.append(port_data[:, 1])  # impedance values
-        return port_impedances
-    
-    def _calculate_cost(self, env_idx: int, max_violation: float) -> float:
-        """Calculate the cost/reward based on impedance violation and capacitor usage."""
-        if max_violation == 0:
-            # No impedance violation - reward based on capacitor efficiency
-            intp_cap_total = sum(val for val in self.vec_cur_params_idx[env_idx][:self.vec_intp_mim[env_idx]] if val > 0)
-            chip_cap_total = sum(val * MOS_CAP_SCALING for val in self.vec_cur_params_idx[env_idx][self.vec_intp_mim[env_idx]:] if val > 0)
-            
-            # Calculate efficiency metrics (higher is better)
-            intp_max_capacity = self.vec_intp_mim[env_idx] * DEFAULT_CAP_VALUE
-            chip_max_capacity = self.vec_chip_mos[env_idx] * 500  # Different max capacity for chip caps
-            
-            intp_efficiency = (intp_max_capacity - intp_cap_total) / intp_max_capacity
-            chip_efficiency = (chip_max_capacity - chip_cap_total) / chip_max_capacity
-            
-            total_cost = 0.5 * intp_efficiency + 0.5 * chip_efficiency
-        else:
-            # Impedance violation penalty
-            total_cost = COST_PENALTY * max_violation
-
-        return total_cost
 
     def vec_cal_reward(self, use_pool=False):
         """
