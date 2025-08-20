@@ -1,4 +1,4 @@
-.param dcap_int_val1=400p
+.param dcap_int_val1=0p
 .param dcap_int_val2=0p
 .param dcap_int_val3=0p
 .param dcap_int_val4=0p
@@ -10,7 +10,7 @@
 .param dcap_int_val10=0p
 .param dcap_int_val11=0p
 .param dcap_int_val12=0p
-.param dcap_int_val13=0p
+.param dcap_int_val13=2000p
 .param dcap_int_val14=0p
 .param dcap_int_val15=0p
 .param dcap_int_val16=0p
@@ -22,12 +22,12 @@
 .param dcap_int_val22=0p
 .param dcap_int_val23=0p
 .param dcap_int_val24=0p
-.param dcap_int_val25=0p
+.param dcap_int_val25=2000p
 .param dcap_int_val26=0p
 .param dcap_int_val27=0p
 .param dcap_int_val28=0p
 .param dcap_int_val29=0p
-.param dcap_int_val30=0p
+.param dcap_int_val30=2000p
 .param dcap_int_val31=0p
 .param dcap_int_val32=0p
 .param dcap_int_val33=0p
@@ -83,7 +83,7 @@
 .param dcap_int_val83=0p
 .param dcap_int_val84=0p
 .param dcap_int_val85=0p
-.param dcap_int_val86=0p
+.param dcap_int_val86=2000p
 .param dcap_int_val87=0p
 .param dcap_int_val88=0p
 .param dcap_int_val89=0p

@@ -1,0 +1,1808 @@
+2025-08-17 20:55:23,634 - root - INFO - ===========================================
+2025-08-17 20:55:23,634 - root - INFO - Environment: 4, Parallel Number: 10
+2025-08-17 20:55:23,634 - root - INFO - Using GPU: cuda, 0
+2025-08-17 20:55:23,634 - root - INFO - Learning Rate: 2.50e-04
+2025-08-17 20:55:23,634 - root - INFO - LR Schedule: cyclic
+2025-08-17 20:55:23,634 - root - INFO - LR Max: 0.001, LR Step Size: 100
+2025-08-17 20:55:23,634 - root - INFO - ================ Training =================
+2025-08-17 20:57:31,597 - root - INFO - -------------------- Update 1 --------------------
+2025-08-17 20:57:31,597 - root - INFO - Current Learning Rate: 1.10e-05
+2025-08-17 20:57:31,597 - root - INFO - Best Update :1, Best Step :100, Best Reward: -0.0010778972999999983
+2025-08-17 20:59:45,633 - root - INFO - -------------------- Update 2 --------------------
+2025-08-17 20:59:45,633 - root - INFO - Current Learning Rate: 2.10e-05
+2025-08-17 20:59:45,633 - root - INFO - Best Update :1, Best Step :100, Best Reward: -0.0010778972999999983
+2025-08-17 21:02:01,488 - root - INFO - -------------------- Update 3 --------------------
+2025-08-17 21:02:01,488 - root - INFO - Current Learning Rate: 3.10e-05
+2025-08-17 21:02:01,488 - root - INFO - Best Update :3, Best Step :94, Best Reward: 0.6074380165289256
+2025-08-17 21:04:31,449 - root - INFO - -------------------- Update 4 --------------------
+2025-08-17 21:04:31,449 - root - INFO - Current Learning Rate: 4.10e-05
+2025-08-17 21:04:31,449 - root - INFO - Best Update :3, Best Step :94, Best Reward: 0.6074380165289256
+2025-08-17 21:07:00,736 - root - INFO - -------------------- Update 5 --------------------
+2025-08-17 21:07:00,737 - root - INFO - Current Learning Rate: 5.09e-05
+2025-08-17 21:07:00,737 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:09:30,568 - root - INFO - -------------------- Update 6 --------------------
+2025-08-17 21:09:30,568 - root - INFO - Current Learning Rate: 6.09e-05
+2025-08-17 21:09:30,568 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:11:59,435 - root - INFO - -------------------- Update 7 --------------------
+2025-08-17 21:11:59,435 - root - INFO - Current Learning Rate: 7.09e-05
+2025-08-17 21:11:59,435 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:14:27,726 - root - INFO - -------------------- Update 8 --------------------
+2025-08-17 21:14:27,727 - root - INFO - Current Learning Rate: 8.09e-05
+2025-08-17 21:14:27,727 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:16:53,396 - root - INFO - -------------------- Update 9 --------------------
+2025-08-17 21:16:53,396 - root - INFO - Current Learning Rate: 9.09e-05
+2025-08-17 21:16:53,397 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:19:18,931 - root - INFO - -------------------- Update 10 --------------------
+2025-08-17 21:19:18,931 - root - INFO - Current Learning Rate: 1.01e-04
+2025-08-17 21:19:18,931 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:21:42,784 - root - INFO - -------------------- Update 11 --------------------
+2025-08-17 21:21:42,784 - root - INFO - Current Learning Rate: 1.11e-04
+2025-08-17 21:21:42,784 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:24:06,494 - root - INFO - -------------------- Update 12 --------------------
+2025-08-17 21:24:06,494 - root - INFO - Current Learning Rate: 1.21e-04
+2025-08-17 21:24:06,494 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:26:29,753 - root - INFO - -------------------- Update 13 --------------------
+2025-08-17 21:26:29,753 - root - INFO - Current Learning Rate: 1.31e-04
+2025-08-17 21:26:29,754 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:28:52,745 - root - INFO - -------------------- Update 14 --------------------
+2025-08-17 21:28:52,746 - root - INFO - Current Learning Rate: 1.41e-04
+2025-08-17 21:28:52,746 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:31:14,309 - root - INFO - -------------------- Update 15 --------------------
+2025-08-17 21:31:14,309 - root - INFO - Current Learning Rate: 1.51e-04
+2025-08-17 21:31:14,309 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:33:37,082 - root - INFO - -------------------- Update 16 --------------------
+2025-08-17 21:33:37,083 - root - INFO - Current Learning Rate: 1.61e-04
+2025-08-17 21:33:37,083 - root - INFO - Best Update :5, Best Step :90, Best Reward: 0.6239669421487604
+2025-08-17 21:36:01,545 - root - INFO - -------------------- Update 17 --------------------
+2025-08-17 21:36:01,545 - root - INFO - Current Learning Rate: 1.71e-04
+2025-08-17 21:36:01,545 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:38:24,472 - root - INFO - -------------------- Update 18 --------------------
+2025-08-17 21:38:24,472 - root - INFO - Current Learning Rate: 1.81e-04
+2025-08-17 21:38:24,473 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:40:46,754 - root - INFO - -------------------- Update 19 --------------------
+2025-08-17 21:40:46,754 - root - INFO - Current Learning Rate: 1.91e-04
+2025-08-17 21:40:46,754 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:43:09,360 - root - INFO - -------------------- Update 20 --------------------
+2025-08-17 21:43:09,360 - root - INFO - Current Learning Rate: 2.01e-04
+2025-08-17 21:43:09,360 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:45:29,787 - root - INFO - -------------------- Update 21 --------------------
+2025-08-17 21:45:29,788 - root - INFO - Current Learning Rate: 2.11e-04
+2025-08-17 21:45:29,788 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:47:50,676 - root - INFO - -------------------- Update 22 --------------------
+2025-08-17 21:47:50,677 - root - INFO - Current Learning Rate: 2.21e-04
+2025-08-17 21:47:50,677 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:50:12,387 - root - INFO - -------------------- Update 23 --------------------
+2025-08-17 21:50:12,387 - root - INFO - Current Learning Rate: 2.31e-04
+2025-08-17 21:50:12,387 - root - INFO - Best Update :17, Best Step :86, Best Reward: 0.640495867768595
+2025-08-17 21:52:33,781 - root - INFO - -------------------- Update 24 --------------------
+2025-08-17 21:52:33,781 - root - INFO - Current Learning Rate: 2.41e-04
+2025-08-17 21:52:33,781 - root - INFO - Best Update :24, Best Step :85, Best Reward: 0.6446280991735537
+2025-08-17 21:54:52,055 - root - INFO - -------------------- Update 25 --------------------
+2025-08-17 21:54:52,055 - root - INFO - Current Learning Rate: 2.51e-04
+2025-08-17 21:54:52,055 - root - INFO - Best Update :24, Best Step :85, Best Reward: 0.6446280991735537
+2025-08-17 21:57:12,335 - root - INFO - -------------------- Update 26 --------------------
+2025-08-17 21:57:12,336 - root - INFO - Current Learning Rate: 2.61e-04
+2025-08-17 21:57:12,336 - root - INFO - Best Update :26, Best Step :83, Best Reward: 0.6528925619834711
+2025-08-17 21:59:30,230 - root - INFO - -------------------- Update 27 --------------------
+2025-08-17 21:59:30,230 - root - INFO - Current Learning Rate: 2.71e-04
+2025-08-17 21:59:30,230 - root - INFO - Best Update :26, Best Step :83, Best Reward: 0.6528925619834711
+2025-08-17 22:01:51,157 - root - INFO - -------------------- Update 28 --------------------
+2025-08-17 22:01:51,157 - root - INFO - Current Learning Rate: 2.81e-04
+2025-08-17 22:01:51,157 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:04:11,609 - root - INFO - -------------------- Update 29 --------------------
+2025-08-17 22:04:11,610 - root - INFO - Current Learning Rate: 2.91e-04
+2025-08-17 22:04:11,610 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:06:31,826 - root - INFO - -------------------- Update 30 --------------------
+2025-08-17 22:06:31,826 - root - INFO - Current Learning Rate: 3.01e-04
+2025-08-17 22:06:31,826 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:08:53,669 - root - INFO - -------------------- Update 31 --------------------
+2025-08-17 22:08:53,670 - root - INFO - Current Learning Rate: 3.11e-04
+2025-08-17 22:08:53,670 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:11:15,834 - root - INFO - -------------------- Update 32 --------------------
+2025-08-17 22:11:15,834 - root - INFO - Current Learning Rate: 3.21e-04
+2025-08-17 22:11:15,834 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:13:35,834 - root - INFO - -------------------- Update 33 --------------------
+2025-08-17 22:13:35,834 - root - INFO - Current Learning Rate: 3.31e-04
+2025-08-17 22:13:35,835 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:15:56,623 - root - INFO - -------------------- Update 34 --------------------
+2025-08-17 22:15:56,624 - root - INFO - Current Learning Rate: 3.41e-04
+2025-08-17 22:15:56,624 - root - INFO - Best Update :28, Best Step :74, Best Reward: 0.6900826446280992
+2025-08-17 22:18:25,260 - root - INFO - -------------------- Update 35 --------------------
+2025-08-17 22:18:25,260 - root - INFO - Current Learning Rate: 3.51e-04
+2025-08-17 22:18:25,260 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:20:56,980 - root - INFO - -------------------- Update 36 --------------------
+2025-08-17 22:20:56,981 - root - INFO - Current Learning Rate: 3.61e-04
+2025-08-17 22:20:56,981 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:23:29,908 - root - INFO - -------------------- Update 37 --------------------
+2025-08-17 22:23:29,908 - root - INFO - Current Learning Rate: 3.71e-04
+2025-08-17 22:23:29,908 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:26:03,418 - root - INFO - -------------------- Update 38 --------------------
+2025-08-17 22:26:03,419 - root - INFO - Current Learning Rate: 3.81e-04
+2025-08-17 22:26:03,419 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:28:38,424 - root - INFO - -------------------- Update 39 --------------------
+2025-08-17 22:28:38,424 - root - INFO - Current Learning Rate: 3.91e-04
+2025-08-17 22:28:38,425 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:30:59,020 - root - INFO - -------------------- Update 40 --------------------
+2025-08-17 22:30:59,020 - root - INFO - Current Learning Rate: 4.01e-04
+2025-08-17 22:30:59,020 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:33:21,177 - root - INFO - -------------------- Update 41 --------------------
+2025-08-17 22:33:21,177 - root - INFO - Current Learning Rate: 4.11e-04
+2025-08-17 22:33:21,177 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:35:41,745 - root - INFO - -------------------- Update 42 --------------------
+2025-08-17 22:35:41,746 - root - INFO - Current Learning Rate: 4.21e-04
+2025-08-17 22:35:41,746 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:38:02,603 - root - INFO - -------------------- Update 43 --------------------
+2025-08-17 22:38:02,603 - root - INFO - Current Learning Rate: 4.31e-04
+2025-08-17 22:38:02,604 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:40:25,148 - root - INFO - -------------------- Update 44 --------------------
+2025-08-17 22:40:25,148 - root - INFO - Current Learning Rate: 4.41e-04
+2025-08-17 22:40:25,148 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:42:49,490 - root - INFO - -------------------- Update 45 --------------------
+2025-08-17 22:42:49,490 - root - INFO - Current Learning Rate: 4.51e-04
+2025-08-17 22:42:49,490 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:45:13,682 - root - INFO - -------------------- Update 46 --------------------
+2025-08-17 22:45:13,683 - root - INFO - Current Learning Rate: 4.61e-04
+2025-08-17 22:45:13,683 - root - INFO - Best Update :35, Best Step :69, Best Reward: 0.7107438016528925
+2025-08-17 22:47:36,489 - root - INFO - -------------------- Update 47 --------------------
+2025-08-17 22:47:36,489 - root - INFO - Current Learning Rate: 4.71e-04
+2025-08-17 22:47:36,489 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 22:49:59,807 - root - INFO - -------------------- Update 48 --------------------
+2025-08-17 22:49:59,807 - root - INFO - Current Learning Rate: 4.81e-04
+2025-08-17 22:49:59,808 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 22:52:20,771 - root - INFO - -------------------- Update 49 --------------------
+2025-08-17 22:52:20,772 - root - INFO - Current Learning Rate: 4.91e-04
+2025-08-17 22:52:20,772 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 22:54:42,711 - root - INFO - -------------------- Update 50 --------------------
+2025-08-17 22:54:42,711 - root - INFO - Current Learning Rate: 5.01e-04
+2025-08-17 22:54:42,711 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 22:57:03,845 - root - INFO - -------------------- Update 51 --------------------
+2025-08-17 22:57:03,845 - root - INFO - Current Learning Rate: 5.10e-04
+2025-08-17 22:57:03,845 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 22:59:23,428 - root - INFO - -------------------- Update 52 --------------------
+2025-08-17 22:59:23,429 - root - INFO - Current Learning Rate: 5.20e-04
+2025-08-17 22:59:23,429 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:01:43,485 - root - INFO - -------------------- Update 53 --------------------
+2025-08-17 23:01:43,485 - root - INFO - Current Learning Rate: 5.30e-04
+2025-08-17 23:01:43,485 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:04:03,714 - root - INFO - -------------------- Update 54 --------------------
+2025-08-17 23:04:03,715 - root - INFO - Current Learning Rate: 5.40e-04
+2025-08-17 23:04:03,715 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:06:27,041 - root - INFO - -------------------- Update 55 --------------------
+2025-08-17 23:06:27,041 - root - INFO - Current Learning Rate: 5.50e-04
+2025-08-17 23:06:27,041 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:08:50,913 - root - INFO - -------------------- Update 56 --------------------
+2025-08-17 23:08:50,914 - root - INFO - Current Learning Rate: 5.60e-04
+2025-08-17 23:08:50,914 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:11:12,544 - root - INFO - -------------------- Update 57 --------------------
+2025-08-17 23:11:12,545 - root - INFO - Current Learning Rate: 5.70e-04
+2025-08-17 23:11:12,545 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:13:35,713 - root - INFO - -------------------- Update 58 --------------------
+2025-08-17 23:13:35,714 - root - INFO - Current Learning Rate: 5.80e-04
+2025-08-17 23:13:35,714 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:15:54,064 - root - INFO - -------------------- Update 59 --------------------
+2025-08-17 23:15:54,064 - root - INFO - Current Learning Rate: 5.90e-04
+2025-08-17 23:15:54,064 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:18:14,712 - root - INFO - -------------------- Update 60 --------------------
+2025-08-17 23:18:14,713 - root - INFO - Current Learning Rate: 6.00e-04
+2025-08-17 23:18:14,713 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:20:35,122 - root - INFO - -------------------- Update 61 --------------------
+2025-08-17 23:20:35,122 - root - INFO - Current Learning Rate: 6.10e-04
+2025-08-17 23:20:35,122 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:22:54,968 - root - INFO - -------------------- Update 62 --------------------
+2025-08-17 23:22:54,969 - root - INFO - Current Learning Rate: 6.20e-04
+2025-08-17 23:22:54,969 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:25:16,910 - root - INFO - -------------------- Update 63 --------------------
+2025-08-17 23:25:16,910 - root - INFO - Current Learning Rate: 6.30e-04
+2025-08-17 23:25:16,910 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:27:39,162 - root - INFO - -------------------- Update 64 --------------------
+2025-08-17 23:27:39,162 - root - INFO - Current Learning Rate: 6.40e-04
+2025-08-17 23:27:39,162 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:30:00,613 - root - INFO - -------------------- Update 65 --------------------
+2025-08-17 23:30:00,613 - root - INFO - Current Learning Rate: 6.50e-04
+2025-08-17 23:30:00,613 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:32:22,108 - root - INFO - -------------------- Update 66 --------------------
+2025-08-17 23:32:22,108 - root - INFO - Current Learning Rate: 6.60e-04
+2025-08-17 23:32:22,108 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:34:40,658 - root - INFO - -------------------- Update 67 --------------------
+2025-08-17 23:34:40,658 - root - INFO - Current Learning Rate: 6.70e-04
+2025-08-17 23:34:40,658 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:37:00,089 - root - INFO - -------------------- Update 68 --------------------
+2025-08-17 23:37:00,089 - root - INFO - Current Learning Rate: 6.80e-04
+2025-08-17 23:37:00,089 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:39:19,261 - root - INFO - -------------------- Update 69 --------------------
+2025-08-17 23:39:19,261 - root - INFO - Current Learning Rate: 6.90e-04
+2025-08-17 23:39:19,261 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:41:40,643 - root - INFO - -------------------- Update 70 --------------------
+2025-08-17 23:41:40,644 - root - INFO - Current Learning Rate: 7.00e-04
+2025-08-17 23:41:40,644 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:43:59,378 - root - INFO - -------------------- Update 71 --------------------
+2025-08-17 23:43:59,378 - root - INFO - Current Learning Rate: 7.10e-04
+2025-08-17 23:43:59,379 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:46:21,319 - root - INFO - -------------------- Update 72 --------------------
+2025-08-17 23:46:21,320 - root - INFO - Current Learning Rate: 7.20e-04
+2025-08-17 23:46:21,320 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:48:41,362 - root - INFO - -------------------- Update 73 --------------------
+2025-08-17 23:48:41,363 - root - INFO - Current Learning Rate: 7.30e-04
+2025-08-17 23:48:41,363 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:51:01,349 - root - INFO - -------------------- Update 74 --------------------
+2025-08-17 23:51:01,349 - root - INFO - Current Learning Rate: 7.40e-04
+2025-08-17 23:51:01,349 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:53:20,077 - root - INFO - -------------------- Update 75 --------------------
+2025-08-17 23:53:20,077 - root - INFO - Current Learning Rate: 7.50e-04
+2025-08-17 23:53:20,078 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:55:39,253 - root - INFO - -------------------- Update 76 --------------------
+2025-08-17 23:55:39,253 - root - INFO - Current Learning Rate: 7.60e-04
+2025-08-17 23:55:39,253 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-17 23:57:59,138 - root - INFO - -------------------- Update 77 --------------------
+2025-08-17 23:57:59,139 - root - INFO - Current Learning Rate: 7.70e-04
+2025-08-17 23:57:59,139 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:00:16,721 - root - INFO - -------------------- Update 78 --------------------
+2025-08-18 00:00:16,721 - root - INFO - Current Learning Rate: 7.80e-04
+2025-08-18 00:00:16,721 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:02:33,295 - root - INFO - -------------------- Update 79 --------------------
+2025-08-18 00:02:33,296 - root - INFO - Current Learning Rate: 7.90e-04
+2025-08-18 00:02:33,296 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:04:53,528 - root - INFO - -------------------- Update 80 --------------------
+2025-08-18 00:04:53,528 - root - INFO - Current Learning Rate: 8.00e-04
+2025-08-18 00:04:53,528 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:07:12,642 - root - INFO - -------------------- Update 81 --------------------
+2025-08-18 00:07:12,642 - root - INFO - Current Learning Rate: 8.10e-04
+2025-08-18 00:07:12,642 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:09:37,527 - root - INFO - -------------------- Update 82 --------------------
+2025-08-18 00:09:37,527 - root - INFO - Current Learning Rate: 8.20e-04
+2025-08-18 00:09:37,527 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:12:00,793 - root - INFO - -------------------- Update 83 --------------------
+2025-08-18 00:12:00,794 - root - INFO - Current Learning Rate: 8.30e-04
+2025-08-18 00:12:00,794 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:14:24,781 - root - INFO - -------------------- Update 84 --------------------
+2025-08-18 00:14:24,781 - root - INFO - Current Learning Rate: 8.40e-04
+2025-08-18 00:14:24,781 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:16:48,425 - root - INFO - -------------------- Update 85 --------------------
+2025-08-18 00:16:48,425 - root - INFO - Current Learning Rate: 8.50e-04
+2025-08-18 00:16:48,425 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:19:12,204 - root - INFO - -------------------- Update 86 --------------------
+2025-08-18 00:19:12,205 - root - INFO - Current Learning Rate: 8.60e-04
+2025-08-18 00:19:12,205 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:21:31,994 - root - INFO - -------------------- Update 87 --------------------
+2025-08-18 00:21:31,994 - root - INFO - Current Learning Rate: 8.70e-04
+2025-08-18 00:21:31,994 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:23:54,711 - root - INFO - -------------------- Update 88 --------------------
+2025-08-18 00:23:54,711 - root - INFO - Current Learning Rate: 8.80e-04
+2025-08-18 00:23:54,711 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:26:15,644 - root - INFO - -------------------- Update 89 --------------------
+2025-08-18 00:26:15,644 - root - INFO - Current Learning Rate: 8.90e-04
+2025-08-18 00:26:15,644 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:28:40,462 - root - INFO - -------------------- Update 90 --------------------
+2025-08-18 00:28:40,462 - root - INFO - Current Learning Rate: 9.00e-04
+2025-08-18 00:28:40,463 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:31:06,594 - root - INFO - -------------------- Update 91 --------------------
+2025-08-18 00:31:06,594 - root - INFO - Current Learning Rate: 9.10e-04
+2025-08-18 00:31:06,594 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:33:31,224 - root - INFO - -------------------- Update 92 --------------------
+2025-08-18 00:33:31,225 - root - INFO - Current Learning Rate: 9.20e-04
+2025-08-18 00:33:31,225 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:35:54,974 - root - INFO - -------------------- Update 93 --------------------
+2025-08-18 00:35:54,974 - root - INFO - Current Learning Rate: 9.30e-04
+2025-08-18 00:35:54,974 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:38:16,913 - root - INFO - -------------------- Update 94 --------------------
+2025-08-18 00:38:16,913 - root - INFO - Current Learning Rate: 9.40e-04
+2025-08-18 00:38:16,913 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:40:42,120 - root - INFO - -------------------- Update 95 --------------------
+2025-08-18 00:40:42,120 - root - INFO - Current Learning Rate: 9.50e-04
+2025-08-18 00:40:42,120 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:43:04,352 - root - INFO - -------------------- Update 96 --------------------
+2025-08-18 00:43:04,352 - root - INFO - Current Learning Rate: 9.60e-04
+2025-08-18 00:43:04,352 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:45:27,693 - root - INFO - -------------------- Update 97 --------------------
+2025-08-18 00:45:27,693 - root - INFO - Current Learning Rate: 9.70e-04
+2025-08-18 00:45:27,693 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:47:50,490 - root - INFO - -------------------- Update 98 --------------------
+2025-08-18 00:47:50,490 - root - INFO - Current Learning Rate: 9.80e-04
+2025-08-18 00:47:50,490 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:50:14,804 - root - INFO - -------------------- Update 99 --------------------
+2025-08-18 00:50:14,805 - root - INFO - Current Learning Rate: 9.90e-04
+2025-08-18 00:50:14,805 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:52:40,060 - root - INFO - -------------------- Update 100 --------------------
+2025-08-18 00:52:40,061 - root - INFO - Current Learning Rate: 1.00e-03
+2025-08-18 00:52:40,061 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:55:03,042 - root - INFO - -------------------- Update 101 --------------------
+2025-08-18 00:55:03,042 - root - INFO - Current Learning Rate: 9.90e-04
+2025-08-18 00:55:03,042 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:57:29,804 - root - INFO - -------------------- Update 102 --------------------
+2025-08-18 00:57:29,804 - root - INFO - Current Learning Rate: 9.80e-04
+2025-08-18 00:57:29,804 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 00:59:51,241 - root - INFO - -------------------- Update 103 --------------------
+2025-08-18 00:59:51,242 - root - INFO - Current Learning Rate: 9.70e-04
+2025-08-18 00:59:51,242 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 01:02:17,986 - root - INFO - -------------------- Update 104 --------------------
+2025-08-18 01:02:17,986 - root - INFO - Current Learning Rate: 9.60e-04
+2025-08-18 01:02:17,986 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 01:04:41,006 - root - INFO - -------------------- Update 105 --------------------
+2025-08-18 01:04:41,006 - root - INFO - Current Learning Rate: 9.50e-04
+2025-08-18 01:04:41,006 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 01:07:10,363 - root - INFO - -------------------- Update 106 --------------------
+2025-08-18 01:07:10,363 - root - INFO - Current Learning Rate: 9.40e-04
+2025-08-18 01:07:10,363 - root - INFO - Best Update :47, Best Step :60, Best Reward: 0.7479338842975207
+2025-08-18 01:09:36,875 - root - INFO - -------------------- Update 107 --------------------
+2025-08-18 01:09:36,875 - root - INFO - Current Learning Rate: 9.30e-04
+2025-08-18 01:09:36,875 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:11:58,594 - root - INFO - -------------------- Update 108 --------------------
+2025-08-18 01:11:58,595 - root - INFO - Current Learning Rate: 9.20e-04
+2025-08-18 01:11:58,595 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:14:20,030 - root - INFO - -------------------- Update 109 --------------------
+2025-08-18 01:14:20,030 - root - INFO - Current Learning Rate: 9.10e-04
+2025-08-18 01:14:20,030 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:16:44,843 - root - INFO - -------------------- Update 110 --------------------
+2025-08-18 01:16:44,844 - root - INFO - Current Learning Rate: 9.00e-04
+2025-08-18 01:16:44,844 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:19:09,486 - root - INFO - -------------------- Update 111 --------------------
+2025-08-18 01:19:09,486 - root - INFO - Current Learning Rate: 8.90e-04
+2025-08-18 01:19:09,486 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:21:34,814 - root - INFO - -------------------- Update 112 --------------------
+2025-08-18 01:21:34,815 - root - INFO - Current Learning Rate: 8.80e-04
+2025-08-18 01:21:34,815 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:24:01,107 - root - INFO - -------------------- Update 113 --------------------
+2025-08-18 01:24:01,107 - root - INFO - Current Learning Rate: 8.70e-04
+2025-08-18 01:24:01,108 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:26:27,765 - root - INFO - -------------------- Update 114 --------------------
+2025-08-18 01:26:27,765 - root - INFO - Current Learning Rate: 8.60e-04
+2025-08-18 01:26:27,765 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:28:54,770 - root - INFO - -------------------- Update 115 --------------------
+2025-08-18 01:28:54,770 - root - INFO - Current Learning Rate: 8.50e-04
+2025-08-18 01:28:54,770 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:31:20,659 - root - INFO - -------------------- Update 116 --------------------
+2025-08-18 01:31:20,659 - root - INFO - Current Learning Rate: 8.40e-04
+2025-08-18 01:31:20,659 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:33:46,218 - root - INFO - -------------------- Update 117 --------------------
+2025-08-18 01:33:46,219 - root - INFO - Current Learning Rate: 8.30e-04
+2025-08-18 01:33:46,219 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:36:12,448 - root - INFO - -------------------- Update 118 --------------------
+2025-08-18 01:36:12,448 - root - INFO - Current Learning Rate: 8.20e-04
+2025-08-18 01:36:12,448 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:38:37,972 - root - INFO - -------------------- Update 119 --------------------
+2025-08-18 01:38:37,972 - root - INFO - Current Learning Rate: 8.10e-04
+2025-08-18 01:38:37,972 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:41:03,218 - root - INFO - -------------------- Update 120 --------------------
+2025-08-18 01:41:03,219 - root - INFO - Current Learning Rate: 8.00e-04
+2025-08-18 01:41:03,219 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:43:29,109 - root - INFO - -------------------- Update 121 --------------------
+2025-08-18 01:43:29,110 - root - INFO - Current Learning Rate: 7.90e-04
+2025-08-18 01:43:29,110 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:45:54,136 - root - INFO - -------------------- Update 122 --------------------
+2025-08-18 01:45:54,137 - root - INFO - Current Learning Rate: 7.80e-04
+2025-08-18 01:45:54,137 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:48:18,287 - root - INFO - -------------------- Update 123 --------------------
+2025-08-18 01:48:18,287 - root - INFO - Current Learning Rate: 7.70e-04
+2025-08-18 01:48:18,287 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:50:44,160 - root - INFO - -------------------- Update 124 --------------------
+2025-08-18 01:50:44,160 - root - INFO - Current Learning Rate: 7.60e-04
+2025-08-18 01:50:44,161 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:53:11,486 - root - INFO - -------------------- Update 125 --------------------
+2025-08-18 01:53:11,486 - root - INFO - Current Learning Rate: 7.50e-04
+2025-08-18 01:53:11,486 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:55:37,451 - root - INFO - -------------------- Update 126 --------------------
+2025-08-18 01:55:37,451 - root - INFO - Current Learning Rate: 7.40e-04
+2025-08-18 01:55:37,451 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 01:58:04,154 - root - INFO - -------------------- Update 127 --------------------
+2025-08-18 01:58:04,154 - root - INFO - Current Learning Rate: 7.30e-04
+2025-08-18 01:58:04,154 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:00:29,376 - root - INFO - -------------------- Update 128 --------------------
+2025-08-18 02:00:29,377 - root - INFO - Current Learning Rate: 7.20e-04
+2025-08-18 02:00:29,377 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:02:51,205 - root - INFO - -------------------- Update 129 --------------------
+2025-08-18 02:02:51,205 - root - INFO - Current Learning Rate: 7.10e-04
+2025-08-18 02:02:51,205 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:05:13,290 - root - INFO - -------------------- Update 130 --------------------
+2025-08-18 02:05:13,290 - root - INFO - Current Learning Rate: 7.00e-04
+2025-08-18 02:05:13,290 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:07:36,537 - root - INFO - -------------------- Update 131 --------------------
+2025-08-18 02:07:36,537 - root - INFO - Current Learning Rate: 6.90e-04
+2025-08-18 02:07:36,537 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:09:59,415 - root - INFO - -------------------- Update 132 --------------------
+2025-08-18 02:09:59,415 - root - INFO - Current Learning Rate: 6.80e-04
+2025-08-18 02:09:59,415 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:12:23,189 - root - INFO - -------------------- Update 133 --------------------
+2025-08-18 02:12:23,189 - root - INFO - Current Learning Rate: 6.70e-04
+2025-08-18 02:12:23,189 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:14:49,175 - root - INFO - -------------------- Update 134 --------------------
+2025-08-18 02:14:49,175 - root - INFO - Current Learning Rate: 6.60e-04
+2025-08-18 02:14:49,175 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:17:15,898 - root - INFO - -------------------- Update 135 --------------------
+2025-08-18 02:17:15,899 - root - INFO - Current Learning Rate: 6.50e-04
+2025-08-18 02:17:15,899 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:19:42,577 - root - INFO - -------------------- Update 136 --------------------
+2025-08-18 02:19:42,578 - root - INFO - Current Learning Rate: 6.40e-04
+2025-08-18 02:19:42,578 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:22:07,698 - root - INFO - -------------------- Update 137 --------------------
+2025-08-18 02:22:07,699 - root - INFO - Current Learning Rate: 6.30e-04
+2025-08-18 02:22:07,699 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:24:34,095 - root - INFO - -------------------- Update 138 --------------------
+2025-08-18 02:24:34,095 - root - INFO - Current Learning Rate: 6.20e-04
+2025-08-18 02:24:34,095 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:27:00,295 - root - INFO - -------------------- Update 139 --------------------
+2025-08-18 02:27:00,295 - root - INFO - Current Learning Rate: 6.10e-04
+2025-08-18 02:27:00,295 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:29:27,459 - root - INFO - -------------------- Update 140 --------------------
+2025-08-18 02:29:27,459 - root - INFO - Current Learning Rate: 6.00e-04
+2025-08-18 02:29:27,459 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:31:55,969 - root - INFO - -------------------- Update 141 --------------------
+2025-08-18 02:31:55,970 - root - INFO - Current Learning Rate: 5.90e-04
+2025-08-18 02:31:55,970 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:34:24,550 - root - INFO - -------------------- Update 142 --------------------
+2025-08-18 02:34:24,550 - root - INFO - Current Learning Rate: 5.80e-04
+2025-08-18 02:34:24,551 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:36:51,993 - root - INFO - -------------------- Update 143 --------------------
+2025-08-18 02:36:51,993 - root - INFO - Current Learning Rate: 5.70e-04
+2025-08-18 02:36:51,993 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:39:20,748 - root - INFO - -------------------- Update 144 --------------------
+2025-08-18 02:39:20,748 - root - INFO - Current Learning Rate: 5.60e-04
+2025-08-18 02:39:20,748 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:41:50,082 - root - INFO - -------------------- Update 145 --------------------
+2025-08-18 02:41:50,083 - root - INFO - Current Learning Rate: 5.50e-04
+2025-08-18 02:41:50,083 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:44:17,363 - root - INFO - -------------------- Update 146 --------------------
+2025-08-18 02:44:17,364 - root - INFO - Current Learning Rate: 5.40e-04
+2025-08-18 02:44:17,364 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:46:47,150 - root - INFO - -------------------- Update 147 --------------------
+2025-08-18 02:46:47,150 - root - INFO - Current Learning Rate: 5.30e-04
+2025-08-18 02:46:47,150 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:49:14,374 - root - INFO - -------------------- Update 148 --------------------
+2025-08-18 02:49:14,374 - root - INFO - Current Learning Rate: 5.20e-04
+2025-08-18 02:49:14,374 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:51:43,758 - root - INFO - -------------------- Update 149 --------------------
+2025-08-18 02:51:43,758 - root - INFO - Current Learning Rate: 5.10e-04
+2025-08-18 02:51:43,758 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:54:12,562 - root - INFO - -------------------- Update 150 --------------------
+2025-08-18 02:54:12,562 - root - INFO - Current Learning Rate: 5.01e-04
+2025-08-18 02:54:12,562 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:56:39,092 - root - INFO - -------------------- Update 151 --------------------
+2025-08-18 02:56:39,093 - root - INFO - Current Learning Rate: 4.91e-04
+2025-08-18 02:56:39,093 - root - INFO - Best Update :107, Best Step :52, Best Reward: 0.78099173553719
+2025-08-18 02:59:09,133 - root - INFO - -------------------- Update 152 --------------------
+2025-08-18 02:59:09,134 - root - INFO - Current Learning Rate: 4.81e-04
+2025-08-18 02:59:09,134 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:01:40,786 - root - INFO - -------------------- Update 153 --------------------
+2025-08-18 03:01:40,786 - root - INFO - Current Learning Rate: 4.71e-04
+2025-08-18 03:01:40,786 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:04:11,897 - root - INFO - -------------------- Update 154 --------------------
+2025-08-18 03:04:11,898 - root - INFO - Current Learning Rate: 4.61e-04
+2025-08-18 03:04:11,898 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:06:45,631 - root - INFO - -------------------- Update 155 --------------------
+2025-08-18 03:06:45,631 - root - INFO - Current Learning Rate: 4.51e-04
+2025-08-18 03:06:45,632 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:09:16,368 - root - INFO - -------------------- Update 156 --------------------
+2025-08-18 03:09:16,369 - root - INFO - Current Learning Rate: 4.41e-04
+2025-08-18 03:09:16,369 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:11:49,462 - root - INFO - -------------------- Update 157 --------------------
+2025-08-18 03:11:49,463 - root - INFO - Current Learning Rate: 4.31e-04
+2025-08-18 03:11:49,463 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:14:21,815 - root - INFO - -------------------- Update 158 --------------------
+2025-08-18 03:14:21,815 - root - INFO - Current Learning Rate: 4.21e-04
+2025-08-18 03:14:21,815 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:16:54,313 - root - INFO - -------------------- Update 159 --------------------
+2025-08-18 03:16:54,313 - root - INFO - Current Learning Rate: 4.11e-04
+2025-08-18 03:16:54,313 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:19:24,426 - root - INFO - -------------------- Update 160 --------------------
+2025-08-18 03:19:24,426 - root - INFO - Current Learning Rate: 4.01e-04
+2025-08-18 03:19:24,427 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:21:56,306 - root - INFO - -------------------- Update 161 --------------------
+2025-08-18 03:21:56,306 - root - INFO - Current Learning Rate: 3.91e-04
+2025-08-18 03:21:56,306 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:24:27,840 - root - INFO - -------------------- Update 162 --------------------
+2025-08-18 03:24:27,841 - root - INFO - Current Learning Rate: 3.81e-04
+2025-08-18 03:24:27,841 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:26:58,431 - root - INFO - -------------------- Update 163 --------------------
+2025-08-18 03:26:58,431 - root - INFO - Current Learning Rate: 3.71e-04
+2025-08-18 03:26:58,431 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:29:27,445 - root - INFO - -------------------- Update 164 --------------------
+2025-08-18 03:29:27,446 - root - INFO - Current Learning Rate: 3.61e-04
+2025-08-18 03:29:27,446 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:31:58,497 - root - INFO - -------------------- Update 165 --------------------
+2025-08-18 03:31:58,497 - root - INFO - Current Learning Rate: 3.51e-04
+2025-08-18 03:31:58,498 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:34:31,753 - root - INFO - -------------------- Update 166 --------------------
+2025-08-18 03:34:31,753 - root - INFO - Current Learning Rate: 3.41e-04
+2025-08-18 03:34:31,753 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:37:02,687 - root - INFO - -------------------- Update 167 --------------------
+2025-08-18 03:37:02,687 - root - INFO - Current Learning Rate: 3.31e-04
+2025-08-18 03:37:02,687 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:39:32,237 - root - INFO - -------------------- Update 168 --------------------
+2025-08-18 03:39:32,237 - root - INFO - Current Learning Rate: 3.21e-04
+2025-08-18 03:39:32,237 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:42:02,654 - root - INFO - -------------------- Update 169 --------------------
+2025-08-18 03:42:02,654 - root - INFO - Current Learning Rate: 3.11e-04
+2025-08-18 03:42:02,654 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:44:31,322 - root - INFO - -------------------- Update 170 --------------------
+2025-08-18 03:44:31,322 - root - INFO - Current Learning Rate: 3.01e-04
+2025-08-18 03:44:31,322 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:46:57,300 - root - INFO - -------------------- Update 171 --------------------
+2025-08-18 03:46:57,301 - root - INFO - Current Learning Rate: 2.91e-04
+2025-08-18 03:46:57,301 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:49:24,825 - root - INFO - -------------------- Update 172 --------------------
+2025-08-18 03:49:24,825 - root - INFO - Current Learning Rate: 2.81e-04
+2025-08-18 03:49:24,825 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:51:56,559 - root - INFO - -------------------- Update 173 --------------------
+2025-08-18 03:51:56,560 - root - INFO - Current Learning Rate: 2.71e-04
+2025-08-18 03:51:56,560 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:54:24,656 - root - INFO - -------------------- Update 174 --------------------
+2025-08-18 03:54:24,656 - root - INFO - Current Learning Rate: 2.61e-04
+2025-08-18 03:54:24,656 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:56:52,681 - root - INFO - -------------------- Update 175 --------------------
+2025-08-18 03:56:52,681 - root - INFO - Current Learning Rate: 2.51e-04
+2025-08-18 03:56:52,681 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 03:59:20,056 - root - INFO - -------------------- Update 176 --------------------
+2025-08-18 03:59:20,056 - root - INFO - Current Learning Rate: 2.41e-04
+2025-08-18 03:59:20,056 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:01:44,305 - root - INFO - -------------------- Update 177 --------------------
+2025-08-18 04:01:44,305 - root - INFO - Current Learning Rate: 2.31e-04
+2025-08-18 04:01:44,305 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:04:16,415 - root - INFO - -------------------- Update 178 --------------------
+2025-08-18 04:04:16,415 - root - INFO - Current Learning Rate: 2.21e-04
+2025-08-18 04:04:16,415 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:06:45,481 - root - INFO - -------------------- Update 179 --------------------
+2025-08-18 04:06:45,482 - root - INFO - Current Learning Rate: 2.11e-04
+2025-08-18 04:06:45,482 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:09:15,631 - root - INFO - -------------------- Update 180 --------------------
+2025-08-18 04:09:15,631 - root - INFO - Current Learning Rate: 2.01e-04
+2025-08-18 04:09:15,632 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:11:42,539 - root - INFO - -------------------- Update 181 --------------------
+2025-08-18 04:11:42,539 - root - INFO - Current Learning Rate: 1.91e-04
+2025-08-18 04:11:42,539 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:14:03,450 - root - INFO - -------------------- Update 182 --------------------
+2025-08-18 04:14:03,450 - root - INFO - Current Learning Rate: 1.81e-04
+2025-08-18 04:14:03,450 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:16:28,139 - root - INFO - -------------------- Update 183 --------------------
+2025-08-18 04:16:28,139 - root - INFO - Current Learning Rate: 1.71e-04
+2025-08-18 04:16:28,140 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:18:56,586 - root - INFO - -------------------- Update 184 --------------------
+2025-08-18 04:18:56,587 - root - INFO - Current Learning Rate: 1.61e-04
+2025-08-18 04:18:56,587 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:21:24,667 - root - INFO - -------------------- Update 185 --------------------
+2025-08-18 04:21:24,667 - root - INFO - Current Learning Rate: 1.51e-04
+2025-08-18 04:21:24,668 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:23:56,133 - root - INFO - -------------------- Update 186 --------------------
+2025-08-18 04:23:56,133 - root - INFO - Current Learning Rate: 1.41e-04
+2025-08-18 04:23:56,133 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:26:26,639 - root - INFO - -------------------- Update 187 --------------------
+2025-08-18 04:26:26,640 - root - INFO - Current Learning Rate: 1.31e-04
+2025-08-18 04:26:26,640 - root - INFO - Best Update :152, Best Step :51, Best Reward: 0.7851239669421488
+2025-08-18 04:28:58,338 - root - INFO - -------------------- Update 188 --------------------
+2025-08-18 04:28:58,338 - root - INFO - Current Learning Rate: 1.21e-04
+2025-08-18 04:28:58,339 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:31:29,357 - root - INFO - -------------------- Update 189 --------------------
+2025-08-18 04:31:29,358 - root - INFO - Current Learning Rate: 1.11e-04
+2025-08-18 04:31:29,358 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:33:59,714 - root - INFO - -------------------- Update 190 --------------------
+2025-08-18 04:33:59,715 - root - INFO - Current Learning Rate: 1.01e-04
+2025-08-18 04:33:59,715 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:36:28,641 - root - INFO - -------------------- Update 191 --------------------
+2025-08-18 04:36:28,641 - root - INFO - Current Learning Rate: 9.09e-05
+2025-08-18 04:36:28,641 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:38:59,507 - root - INFO - -------------------- Update 192 --------------------
+2025-08-18 04:38:59,507 - root - INFO - Current Learning Rate: 8.09e-05
+2025-08-18 04:38:59,507 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:41:29,097 - root - INFO - -------------------- Update 193 --------------------
+2025-08-18 04:41:29,098 - root - INFO - Current Learning Rate: 7.09e-05
+2025-08-18 04:41:29,098 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:43:58,870 - root - INFO - -------------------- Update 194 --------------------
+2025-08-18 04:43:58,870 - root - INFO - Current Learning Rate: 6.09e-05
+2025-08-18 04:43:58,870 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:46:28,870 - root - INFO - -------------------- Update 195 --------------------
+2025-08-18 04:46:28,870 - root - INFO - Current Learning Rate: 5.09e-05
+2025-08-18 04:46:28,870 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:49:00,846 - root - INFO - -------------------- Update 196 --------------------
+2025-08-18 04:49:00,846 - root - INFO - Current Learning Rate: 4.10e-05
+2025-08-18 04:49:00,846 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:51:34,105 - root - INFO - -------------------- Update 197 --------------------
+2025-08-18 04:51:34,105 - root - INFO - Current Learning Rate: 3.10e-05
+2025-08-18 04:51:34,105 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:54:06,127 - root - INFO - -------------------- Update 198 --------------------
+2025-08-18 04:54:06,128 - root - INFO - Current Learning Rate: 2.10e-05
+2025-08-18 04:54:06,128 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:56:34,713 - root - INFO - -------------------- Update 199 --------------------
+2025-08-18 04:56:34,714 - root - INFO - Current Learning Rate: 1.10e-05
+2025-08-18 04:56:34,714 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 04:59:10,788 - root - INFO - -------------------- Update 200 --------------------
+2025-08-18 04:59:10,789 - root - INFO - Current Learning Rate: 1.00e-06
+2025-08-18 04:59:10,789 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:01:45,304 - root - INFO - -------------------- Update 201 --------------------
+2025-08-18 05:01:45,305 - root - INFO - Current Learning Rate: 1.10e-05
+2025-08-18 05:01:45,305 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:04:17,071 - root - INFO - -------------------- Update 202 --------------------
+2025-08-18 05:04:17,071 - root - INFO - Current Learning Rate: 2.10e-05
+2025-08-18 05:04:17,071 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:06:47,181 - root - INFO - -------------------- Update 203 --------------------
+2025-08-18 05:06:47,181 - root - INFO - Current Learning Rate: 3.10e-05
+2025-08-18 05:06:47,181 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:09:16,074 - root - INFO - -------------------- Update 204 --------------------
+2025-08-18 05:09:16,074 - root - INFO - Current Learning Rate: 4.10e-05
+2025-08-18 05:09:16,075 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:11:41,764 - root - INFO - -------------------- Update 205 --------------------
+2025-08-18 05:11:41,765 - root - INFO - Current Learning Rate: 5.09e-05
+2025-08-18 05:11:41,765 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:14:09,721 - root - INFO - -------------------- Update 206 --------------------
+2025-08-18 05:14:09,721 - root - INFO - Current Learning Rate: 6.09e-05
+2025-08-18 05:14:09,722 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:16:38,707 - root - INFO - -------------------- Update 207 --------------------
+2025-08-18 05:16:38,707 - root - INFO - Current Learning Rate: 7.09e-05
+2025-08-18 05:16:38,708 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:19:08,268 - root - INFO - -------------------- Update 208 --------------------
+2025-08-18 05:19:08,268 - root - INFO - Current Learning Rate: 8.09e-05
+2025-08-18 05:19:08,268 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:21:35,086 - root - INFO - -------------------- Update 209 --------------------
+2025-08-18 05:21:35,086 - root - INFO - Current Learning Rate: 9.09e-05
+2025-08-18 05:21:35,086 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:24:02,335 - root - INFO - -------------------- Update 210 --------------------
+2025-08-18 05:24:02,335 - root - INFO - Current Learning Rate: 1.01e-04
+2025-08-18 05:24:02,335 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:26:28,870 - root - INFO - -------------------- Update 211 --------------------
+2025-08-18 05:26:28,870 - root - INFO - Current Learning Rate: 1.11e-04
+2025-08-18 05:26:28,870 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:28:55,112 - root - INFO - -------------------- Update 212 --------------------
+2025-08-18 05:28:55,112 - root - INFO - Current Learning Rate: 1.21e-04
+2025-08-18 05:28:55,112 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:31:19,165 - root - INFO - -------------------- Update 213 --------------------
+2025-08-18 05:31:19,165 - root - INFO - Current Learning Rate: 1.31e-04
+2025-08-18 05:31:19,165 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:33:44,290 - root - INFO - -------------------- Update 214 --------------------
+2025-08-18 05:33:44,291 - root - INFO - Current Learning Rate: 1.41e-04
+2025-08-18 05:33:44,291 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:36:08,311 - root - INFO - -------------------- Update 215 --------------------
+2025-08-18 05:36:08,311 - root - INFO - Current Learning Rate: 1.51e-04
+2025-08-18 05:36:08,311 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:38:33,230 - root - INFO - -------------------- Update 216 --------------------
+2025-08-18 05:38:33,231 - root - INFO - Current Learning Rate: 1.61e-04
+2025-08-18 05:38:33,231 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:41:00,181 - root - INFO - -------------------- Update 217 --------------------
+2025-08-18 05:41:00,181 - root - INFO - Current Learning Rate: 1.71e-04
+2025-08-18 05:41:00,181 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:43:25,351 - root - INFO - -------------------- Update 218 --------------------
+2025-08-18 05:43:25,352 - root - INFO - Current Learning Rate: 1.81e-04
+2025-08-18 05:43:25,352 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:45:50,239 - root - INFO - -------------------- Update 219 --------------------
+2025-08-18 05:45:50,239 - root - INFO - Current Learning Rate: 1.91e-04
+2025-08-18 05:45:50,239 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:48:15,032 - root - INFO - -------------------- Update 220 --------------------
+2025-08-18 05:48:15,032 - root - INFO - Current Learning Rate: 2.01e-04
+2025-08-18 05:48:15,032 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:50:40,989 - root - INFO - -------------------- Update 221 --------------------
+2025-08-18 05:50:40,989 - root - INFO - Current Learning Rate: 2.11e-04
+2025-08-18 05:50:40,990 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:53:09,025 - root - INFO - -------------------- Update 222 --------------------
+2025-08-18 05:53:09,026 - root - INFO - Current Learning Rate: 2.21e-04
+2025-08-18 05:53:09,026 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:55:36,854 - root - INFO - -------------------- Update 223 --------------------
+2025-08-18 05:55:36,854 - root - INFO - Current Learning Rate: 2.31e-04
+2025-08-18 05:55:36,854 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 05:58:04,423 - root - INFO - -------------------- Update 224 --------------------
+2025-08-18 05:58:04,423 - root - INFO - Current Learning Rate: 2.41e-04
+2025-08-18 05:58:04,423 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:00:33,817 - root - INFO - -------------------- Update 225 --------------------
+2025-08-18 06:00:33,818 - root - INFO - Current Learning Rate: 2.51e-04
+2025-08-18 06:00:33,818 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:03:03,949 - root - INFO - -------------------- Update 226 --------------------
+2025-08-18 06:03:03,950 - root - INFO - Current Learning Rate: 2.61e-04
+2025-08-18 06:03:03,950 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:05:28,532 - root - INFO - -------------------- Update 227 --------------------
+2025-08-18 06:05:28,533 - root - INFO - Current Learning Rate: 2.71e-04
+2025-08-18 06:05:28,533 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:07:57,706 - root - INFO - -------------------- Update 228 --------------------
+2025-08-18 06:07:57,706 - root - INFO - Current Learning Rate: 2.81e-04
+2025-08-18 06:07:57,707 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:10:24,999 - root - INFO - -------------------- Update 229 --------------------
+2025-08-18 06:10:24,999 - root - INFO - Current Learning Rate: 2.91e-04
+2025-08-18 06:10:25,000 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:12:56,429 - root - INFO - -------------------- Update 230 --------------------
+2025-08-18 06:12:56,429 - root - INFO - Current Learning Rate: 3.01e-04
+2025-08-18 06:12:56,429 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:15:26,293 - root - INFO - -------------------- Update 231 --------------------
+2025-08-18 06:15:26,293 - root - INFO - Current Learning Rate: 3.11e-04
+2025-08-18 06:15:26,294 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:17:55,071 - root - INFO - -------------------- Update 232 --------------------
+2025-08-18 06:17:55,071 - root - INFO - Current Learning Rate: 3.21e-04
+2025-08-18 06:17:55,071 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:20:26,267 - root - INFO - -------------------- Update 233 --------------------
+2025-08-18 06:20:26,268 - root - INFO - Current Learning Rate: 3.31e-04
+2025-08-18 06:20:26,268 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:22:58,613 - root - INFO - -------------------- Update 234 --------------------
+2025-08-18 06:22:58,613 - root - INFO - Current Learning Rate: 3.41e-04
+2025-08-18 06:22:58,614 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:25:28,053 - root - INFO - -------------------- Update 235 --------------------
+2025-08-18 06:25:28,053 - root - INFO - Current Learning Rate: 3.51e-04
+2025-08-18 06:25:28,053 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:27:55,646 - root - INFO - -------------------- Update 236 --------------------
+2025-08-18 06:27:55,647 - root - INFO - Current Learning Rate: 3.61e-04
+2025-08-18 06:27:55,647 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:30:26,624 - root - INFO - -------------------- Update 237 --------------------
+2025-08-18 06:30:26,624 - root - INFO - Current Learning Rate: 3.71e-04
+2025-08-18 06:30:26,624 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:32:55,252 - root - INFO - -------------------- Update 238 --------------------
+2025-08-18 06:32:55,253 - root - INFO - Current Learning Rate: 3.81e-04
+2025-08-18 06:32:55,253 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:35:21,411 - root - INFO - -------------------- Update 239 --------------------
+2025-08-18 06:35:21,411 - root - INFO - Current Learning Rate: 3.91e-04
+2025-08-18 06:35:21,411 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:37:44,966 - root - INFO - -------------------- Update 240 --------------------
+2025-08-18 06:37:44,966 - root - INFO - Current Learning Rate: 4.01e-04
+2025-08-18 06:37:44,967 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:40:05,168 - root - INFO - -------------------- Update 241 --------------------
+2025-08-18 06:40:05,169 - root - INFO - Current Learning Rate: 4.11e-04
+2025-08-18 06:40:05,169 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:42:26,591 - root - INFO - -------------------- Update 242 --------------------
+2025-08-18 06:42:26,592 - root - INFO - Current Learning Rate: 4.21e-04
+2025-08-18 06:42:26,592 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:44:46,163 - root - INFO - -------------------- Update 243 --------------------
+2025-08-18 06:44:46,163 - root - INFO - Current Learning Rate: 4.31e-04
+2025-08-18 06:44:46,163 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:47:07,292 - root - INFO - -------------------- Update 244 --------------------
+2025-08-18 06:47:07,292 - root - INFO - Current Learning Rate: 4.41e-04
+2025-08-18 06:47:07,292 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:49:25,182 - root - INFO - -------------------- Update 245 --------------------
+2025-08-18 06:49:25,183 - root - INFO - Current Learning Rate: 4.51e-04
+2025-08-18 06:49:25,183 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:51:47,871 - root - INFO - -------------------- Update 246 --------------------
+2025-08-18 06:51:47,871 - root - INFO - Current Learning Rate: 4.61e-04
+2025-08-18 06:51:47,871 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:54:14,710 - root - INFO - -------------------- Update 247 --------------------
+2025-08-18 06:54:14,711 - root - INFO - Current Learning Rate: 4.71e-04
+2025-08-18 06:54:14,711 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:56:44,702 - root - INFO - -------------------- Update 248 --------------------
+2025-08-18 06:56:44,702 - root - INFO - Current Learning Rate: 4.81e-04
+2025-08-18 06:56:44,703 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 06:59:12,267 - root - INFO - -------------------- Update 249 --------------------
+2025-08-18 06:59:12,267 - root - INFO - Current Learning Rate: 4.91e-04
+2025-08-18 06:59:12,267 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 07:01:42,213 - root - INFO - -------------------- Update 250 --------------------
+2025-08-18 07:01:42,214 - root - INFO - Current Learning Rate: 5.01e-04
+2025-08-18 07:01:42,214 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 07:04:10,506 - root - INFO - -------------------- Update 251 --------------------
+2025-08-18 07:04:10,507 - root - INFO - Current Learning Rate: 5.10e-04
+2025-08-18 07:04:10,507 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 07:06:38,459 - root - INFO - -------------------- Update 252 --------------------
+2025-08-18 07:06:38,459 - root - INFO - Current Learning Rate: 5.20e-04
+2025-08-18 07:06:38,459 - root - INFO - Best Update :188, Best Step :45, Best Reward: 0.8099173553719008
+2025-08-18 07:09:03,370 - root - INFO - -------------------- Update 253 --------------------
+2025-08-18 07:09:03,370 - root - INFO - Current Learning Rate: 5.30e-04
+2025-08-18 07:09:03,371 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:11:27,121 - root - INFO - -------------------- Update 254 --------------------
+2025-08-18 07:11:27,122 - root - INFO - Current Learning Rate: 5.40e-04
+2025-08-18 07:11:27,122 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:13:52,550 - root - INFO - -------------------- Update 255 --------------------
+2025-08-18 07:13:52,550 - root - INFO - Current Learning Rate: 5.50e-04
+2025-08-18 07:13:52,551 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:16:15,497 - root - INFO - -------------------- Update 256 --------------------
+2025-08-18 07:16:15,498 - root - INFO - Current Learning Rate: 5.60e-04
+2025-08-18 07:16:15,498 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:18:42,300 - root - INFO - -------------------- Update 257 --------------------
+2025-08-18 07:18:42,301 - root - INFO - Current Learning Rate: 5.70e-04
+2025-08-18 07:18:42,301 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:21:10,288 - root - INFO - -------------------- Update 258 --------------------
+2025-08-18 07:21:10,288 - root - INFO - Current Learning Rate: 5.80e-04
+2025-08-18 07:21:10,288 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:23:37,467 - root - INFO - -------------------- Update 259 --------------------
+2025-08-18 07:23:37,468 - root - INFO - Current Learning Rate: 5.90e-04
+2025-08-18 07:23:37,468 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:26:01,554 - root - INFO - -------------------- Update 260 --------------------
+2025-08-18 07:26:01,554 - root - INFO - Current Learning Rate: 6.00e-04
+2025-08-18 07:26:01,554 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:28:28,415 - root - INFO - -------------------- Update 261 --------------------
+2025-08-18 07:28:28,415 - root - INFO - Current Learning Rate: 6.10e-04
+2025-08-18 07:28:28,415 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:30:58,100 - root - INFO - -------------------- Update 262 --------------------
+2025-08-18 07:30:58,100 - root - INFO - Current Learning Rate: 6.20e-04
+2025-08-18 07:30:58,100 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:33:25,793 - root - INFO - -------------------- Update 263 --------------------
+2025-08-18 07:33:25,793 - root - INFO - Current Learning Rate: 6.30e-04
+2025-08-18 07:33:25,793 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:35:55,752 - root - INFO - -------------------- Update 264 --------------------
+2025-08-18 07:35:55,752 - root - INFO - Current Learning Rate: 6.40e-04
+2025-08-18 07:35:55,752 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:38:23,514 - root - INFO - -------------------- Update 265 --------------------
+2025-08-18 07:38:23,514 - root - INFO - Current Learning Rate: 6.50e-04
+2025-08-18 07:38:23,514 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:40:53,530 - root - INFO - -------------------- Update 266 --------------------
+2025-08-18 07:40:53,530 - root - INFO - Current Learning Rate: 6.60e-04
+2025-08-18 07:40:53,530 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:43:22,924 - root - INFO - -------------------- Update 267 --------------------
+2025-08-18 07:43:22,924 - root - INFO - Current Learning Rate: 6.70e-04
+2025-08-18 07:43:22,924 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:45:48,636 - root - INFO - -------------------- Update 268 --------------------
+2025-08-18 07:45:48,636 - root - INFO - Current Learning Rate: 6.80e-04
+2025-08-18 07:45:48,636 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:48:17,680 - root - INFO - -------------------- Update 269 --------------------
+2025-08-18 07:48:17,680 - root - INFO - Current Learning Rate: 6.90e-04
+2025-08-18 07:48:17,680 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:50:44,912 - root - INFO - -------------------- Update 270 --------------------
+2025-08-18 07:50:44,913 - root - INFO - Current Learning Rate: 7.00e-04
+2025-08-18 07:50:44,913 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:53:11,468 - root - INFO - -------------------- Update 271 --------------------
+2025-08-18 07:53:11,468 - root - INFO - Current Learning Rate: 7.10e-04
+2025-08-18 07:53:11,468 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:55:40,157 - root - INFO - -------------------- Update 272 --------------------
+2025-08-18 07:55:40,157 - root - INFO - Current Learning Rate: 7.20e-04
+2025-08-18 07:55:40,157 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 07:58:09,746 - root - INFO - -------------------- Update 273 --------------------
+2025-08-18 07:58:09,746 - root - INFO - Current Learning Rate: 7.30e-04
+2025-08-18 07:58:09,746 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:00:36,110 - root - INFO - -------------------- Update 274 --------------------
+2025-08-18 08:00:36,110 - root - INFO - Current Learning Rate: 7.40e-04
+2025-08-18 08:00:36,110 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:03:01,839 - root - INFO - -------------------- Update 275 --------------------
+2025-08-18 08:03:01,839 - root - INFO - Current Learning Rate: 7.50e-04
+2025-08-18 08:03:01,839 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:05:28,987 - root - INFO - -------------------- Update 276 --------------------
+2025-08-18 08:05:28,987 - root - INFO - Current Learning Rate: 7.60e-04
+2025-08-18 08:05:28,988 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:07:56,545 - root - INFO - -------------------- Update 277 --------------------
+2025-08-18 08:07:56,546 - root - INFO - Current Learning Rate: 7.70e-04
+2025-08-18 08:07:56,546 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:10:25,691 - root - INFO - -------------------- Update 278 --------------------
+2025-08-18 08:10:25,692 - root - INFO - Current Learning Rate: 7.80e-04
+2025-08-18 08:10:25,692 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:12:58,547 - root - INFO - -------------------- Update 279 --------------------
+2025-08-18 08:12:58,547 - root - INFO - Current Learning Rate: 7.90e-04
+2025-08-18 08:12:58,547 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:15:29,127 - root - INFO - -------------------- Update 280 --------------------
+2025-08-18 08:15:29,127 - root - INFO - Current Learning Rate: 8.00e-04
+2025-08-18 08:15:29,127 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:17:58,622 - root - INFO - -------------------- Update 281 --------------------
+2025-08-18 08:17:58,623 - root - INFO - Current Learning Rate: 8.10e-04
+2025-08-18 08:17:58,623 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:20:29,117 - root - INFO - -------------------- Update 282 --------------------
+2025-08-18 08:20:29,117 - root - INFO - Current Learning Rate: 8.20e-04
+2025-08-18 08:20:29,117 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:22:57,871 - root - INFO - -------------------- Update 283 --------------------
+2025-08-18 08:22:57,871 - root - INFO - Current Learning Rate: 8.30e-04
+2025-08-18 08:22:57,871 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:25:27,376 - root - INFO - -------------------- Update 284 --------------------
+2025-08-18 08:25:27,376 - root - INFO - Current Learning Rate: 8.40e-04
+2025-08-18 08:25:27,376 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:27:55,573 - root - INFO - -------------------- Update 285 --------------------
+2025-08-18 08:27:55,574 - root - INFO - Current Learning Rate: 8.50e-04
+2025-08-18 08:27:55,574 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:30:20,508 - root - INFO - -------------------- Update 286 --------------------
+2025-08-18 08:30:20,508 - root - INFO - Current Learning Rate: 8.60e-04
+2025-08-18 08:30:20,508 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:32:44,408 - root - INFO - -------------------- Update 287 --------------------
+2025-08-18 08:32:44,409 - root - INFO - Current Learning Rate: 8.70e-04
+2025-08-18 08:32:44,409 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:35:06,787 - root - INFO - -------------------- Update 288 --------------------
+2025-08-18 08:35:06,787 - root - INFO - Current Learning Rate: 8.80e-04
+2025-08-18 08:35:06,787 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:37:30,892 - root - INFO - -------------------- Update 289 --------------------
+2025-08-18 08:37:30,893 - root - INFO - Current Learning Rate: 8.90e-04
+2025-08-18 08:37:30,893 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:39:55,588 - root - INFO - -------------------- Update 290 --------------------
+2025-08-18 08:39:55,588 - root - INFO - Current Learning Rate: 9.00e-04
+2025-08-18 08:39:55,588 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:42:18,569 - root - INFO - -------------------- Update 291 --------------------
+2025-08-18 08:42:18,569 - root - INFO - Current Learning Rate: 9.10e-04
+2025-08-18 08:42:18,569 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:44:44,264 - root - INFO - -------------------- Update 292 --------------------
+2025-08-18 08:44:44,264 - root - INFO - Current Learning Rate: 9.20e-04
+2025-08-18 08:44:44,264 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:47:11,564 - root - INFO - -------------------- Update 293 --------------------
+2025-08-18 08:47:11,564 - root - INFO - Current Learning Rate: 9.30e-04
+2025-08-18 08:47:11,564 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:49:40,182 - root - INFO - -------------------- Update 294 --------------------
+2025-08-18 08:49:40,182 - root - INFO - Current Learning Rate: 9.40e-04
+2025-08-18 08:49:40,183 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:52:06,201 - root - INFO - -------------------- Update 295 --------------------
+2025-08-18 08:52:06,201 - root - INFO - Current Learning Rate: 9.50e-04
+2025-08-18 08:52:06,201 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:54:29,620 - root - INFO - -------------------- Update 296 --------------------
+2025-08-18 08:54:29,621 - root - INFO - Current Learning Rate: 9.60e-04
+2025-08-18 08:54:29,621 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:56:50,580 - root - INFO - -------------------- Update 297 --------------------
+2025-08-18 08:56:50,580 - root - INFO - Current Learning Rate: 9.70e-04
+2025-08-18 08:56:50,580 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 08:59:18,229 - root - INFO - -------------------- Update 298 --------------------
+2025-08-18 08:59:18,230 - root - INFO - Current Learning Rate: 9.80e-04
+2025-08-18 08:59:18,230 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:01:44,536 - root - INFO - -------------------- Update 299 --------------------
+2025-08-18 09:01:44,536 - root - INFO - Current Learning Rate: 9.90e-04
+2025-08-18 09:01:44,536 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:04:07,540 - root - INFO - -------------------- Update 300 --------------------
+2025-08-18 09:04:07,541 - root - INFO - Current Learning Rate: 1.00e-03
+2025-08-18 09:04:07,541 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:06:35,183 - root - INFO - -------------------- Update 301 --------------------
+2025-08-18 09:06:35,183 - root - INFO - Current Learning Rate: 9.90e-04
+2025-08-18 09:06:35,184 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:09:04,297 - root - INFO - -------------------- Update 302 --------------------
+2025-08-18 09:09:04,298 - root - INFO - Current Learning Rate: 9.80e-04
+2025-08-18 09:09:04,298 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:11:33,628 - root - INFO - -------------------- Update 303 --------------------
+2025-08-18 09:11:33,628 - root - INFO - Current Learning Rate: 9.70e-04
+2025-08-18 09:11:33,629 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:14:02,388 - root - INFO - -------------------- Update 304 --------------------
+2025-08-18 09:14:02,388 - root - INFO - Current Learning Rate: 9.60e-04
+2025-08-18 09:14:02,388 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:16:29,758 - root - INFO - -------------------- Update 305 --------------------
+2025-08-18 09:16:29,758 - root - INFO - Current Learning Rate: 9.50e-04
+2025-08-18 09:16:29,759 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:18:58,491 - root - INFO - -------------------- Update 306 --------------------
+2025-08-18 09:18:58,491 - root - INFO - Current Learning Rate: 9.40e-04
+2025-08-18 09:18:58,491 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:21:25,641 - root - INFO - -------------------- Update 307 --------------------
+2025-08-18 09:21:25,642 - root - INFO - Current Learning Rate: 9.30e-04
+2025-08-18 09:21:25,642 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:23:54,711 - root - INFO - -------------------- Update 308 --------------------
+2025-08-18 09:23:54,712 - root - INFO - Current Learning Rate: 9.20e-04
+2025-08-18 09:23:54,712 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:26:25,318 - root - INFO - -------------------- Update 309 --------------------
+2025-08-18 09:26:25,319 - root - INFO - Current Learning Rate: 9.10e-04
+2025-08-18 09:26:25,319 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:28:54,968 - root - INFO - -------------------- Update 310 --------------------
+2025-08-18 09:28:54,969 - root - INFO - Current Learning Rate: 9.00e-04
+2025-08-18 09:28:54,969 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:31:27,073 - root - INFO - -------------------- Update 311 --------------------
+2025-08-18 09:31:27,073 - root - INFO - Current Learning Rate: 8.90e-04
+2025-08-18 09:31:27,073 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:33:56,758 - root - INFO - -------------------- Update 312 --------------------
+2025-08-18 09:33:56,758 - root - INFO - Current Learning Rate: 8.80e-04
+2025-08-18 09:33:56,758 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:36:20,719 - root - INFO - -------------------- Update 313 --------------------
+2025-08-18 09:36:20,719 - root - INFO - Current Learning Rate: 8.70e-04
+2025-08-18 09:36:20,719 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:38:47,123 - root - INFO - -------------------- Update 314 --------------------
+2025-08-18 09:38:47,124 - root - INFO - Current Learning Rate: 8.60e-04
+2025-08-18 09:38:47,124 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:41:12,682 - root - INFO - -------------------- Update 315 --------------------
+2025-08-18 09:41:12,682 - root - INFO - Current Learning Rate: 8.50e-04
+2025-08-18 09:41:12,682 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:43:38,716 - root - INFO - -------------------- Update 316 --------------------
+2025-08-18 09:43:38,717 - root - INFO - Current Learning Rate: 8.40e-04
+2025-08-18 09:43:38,717 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:46:06,448 - root - INFO - -------------------- Update 317 --------------------
+2025-08-18 09:46:06,448 - root - INFO - Current Learning Rate: 8.30e-04
+2025-08-18 09:46:06,448 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:48:36,012 - root - INFO - -------------------- Update 318 --------------------
+2025-08-18 09:48:36,013 - root - INFO - Current Learning Rate: 8.20e-04
+2025-08-18 09:48:36,013 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:51:06,200 - root - INFO - -------------------- Update 319 --------------------
+2025-08-18 09:51:06,200 - root - INFO - Current Learning Rate: 8.10e-04
+2025-08-18 09:51:06,200 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:53:35,999 - root - INFO - -------------------- Update 320 --------------------
+2025-08-18 09:53:36,000 - root - INFO - Current Learning Rate: 8.00e-04
+2025-08-18 09:53:36,000 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:56:01,370 - root - INFO - -------------------- Update 321 --------------------
+2025-08-18 09:56:01,371 - root - INFO - Current Learning Rate: 7.90e-04
+2025-08-18 09:56:01,371 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 09:58:30,883 - root - INFO - -------------------- Update 322 --------------------
+2025-08-18 09:58:30,884 - root - INFO - Current Learning Rate: 7.80e-04
+2025-08-18 09:58:30,884 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:00:58,815 - root - INFO - -------------------- Update 323 --------------------
+2025-08-18 10:00:58,816 - root - INFO - Current Learning Rate: 7.70e-04
+2025-08-18 10:00:58,816 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:03:28,107 - root - INFO - -------------------- Update 324 --------------------
+2025-08-18 10:03:28,108 - root - INFO - Current Learning Rate: 7.60e-04
+2025-08-18 10:03:28,108 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:05:56,475 - root - INFO - -------------------- Update 325 --------------------
+2025-08-18 10:05:56,476 - root - INFO - Current Learning Rate: 7.50e-04
+2025-08-18 10:05:56,476 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:08:26,770 - root - INFO - -------------------- Update 326 --------------------
+2025-08-18 10:08:26,770 - root - INFO - Current Learning Rate: 7.40e-04
+2025-08-18 10:08:26,770 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:10:57,792 - root - INFO - -------------------- Update 327 --------------------
+2025-08-18 10:10:57,792 - root - INFO - Current Learning Rate: 7.30e-04
+2025-08-18 10:10:57,792 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:13:24,175 - root - INFO - -------------------- Update 328 --------------------
+2025-08-18 10:13:24,175 - root - INFO - Current Learning Rate: 7.20e-04
+2025-08-18 10:13:24,176 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:15:51,162 - root - INFO - -------------------- Update 329 --------------------
+2025-08-18 10:15:51,163 - root - INFO - Current Learning Rate: 7.10e-04
+2025-08-18 10:15:51,163 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:18:18,161 - root - INFO - -------------------- Update 330 --------------------
+2025-08-18 10:18:18,162 - root - INFO - Current Learning Rate: 7.00e-04
+2025-08-18 10:18:18,162 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:20:46,397 - root - INFO - -------------------- Update 331 --------------------
+2025-08-18 10:20:46,397 - root - INFO - Current Learning Rate: 6.90e-04
+2025-08-18 10:20:46,398 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:23:13,660 - root - INFO - -------------------- Update 332 --------------------
+2025-08-18 10:23:13,661 - root - INFO - Current Learning Rate: 6.80e-04
+2025-08-18 10:23:13,661 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:25:45,734 - root - INFO - -------------------- Update 333 --------------------
+2025-08-18 10:25:45,735 - root - INFO - Current Learning Rate: 6.70e-04
+2025-08-18 10:25:45,735 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:28:14,820 - root - INFO - -------------------- Update 334 --------------------
+2025-08-18 10:28:14,821 - root - INFO - Current Learning Rate: 6.60e-04
+2025-08-18 10:28:14,821 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:30:40,571 - root - INFO - -------------------- Update 335 --------------------
+2025-08-18 10:30:40,572 - root - INFO - Current Learning Rate: 6.50e-04
+2025-08-18 10:30:40,572 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:33:10,757 - root - INFO - -------------------- Update 336 --------------------
+2025-08-18 10:33:10,757 - root - INFO - Current Learning Rate: 6.40e-04
+2025-08-18 10:33:10,757 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:35:39,803 - root - INFO - -------------------- Update 337 --------------------
+2025-08-18 10:35:39,804 - root - INFO - Current Learning Rate: 6.30e-04
+2025-08-18 10:35:39,804 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:38:12,834 - root - INFO - -------------------- Update 338 --------------------
+2025-08-18 10:38:12,835 - root - INFO - Current Learning Rate: 6.20e-04
+2025-08-18 10:38:12,835 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:40:40,426 - root - INFO - -------------------- Update 339 --------------------
+2025-08-18 10:40:40,426 - root - INFO - Current Learning Rate: 6.10e-04
+2025-08-18 10:40:40,426 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:43:20,491 - root - INFO - -------------------- Update 340 --------------------
+2025-08-18 10:43:20,491 - root - INFO - Current Learning Rate: 6.00e-04
+2025-08-18 10:43:20,491 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:46:16,062 - root - INFO - -------------------- Update 341 --------------------
+2025-08-18 10:46:16,062 - root - INFO - Current Learning Rate: 5.90e-04
+2025-08-18 10:46:16,062 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:49:16,654 - root - INFO - -------------------- Update 342 --------------------
+2025-08-18 10:49:16,654 - root - INFO - Current Learning Rate: 5.80e-04
+2025-08-18 10:49:16,654 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:52:09,678 - root - INFO - -------------------- Update 343 --------------------
+2025-08-18 10:52:09,678 - root - INFO - Current Learning Rate: 5.70e-04
+2025-08-18 10:52:09,678 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:55:10,290 - root - INFO - -------------------- Update 344 --------------------
+2025-08-18 10:55:10,291 - root - INFO - Current Learning Rate: 5.60e-04
+2025-08-18 10:55:10,291 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 10:58:11,375 - root - INFO - -------------------- Update 345 --------------------
+2025-08-18 10:58:11,376 - root - INFO - Current Learning Rate: 5.50e-04
+2025-08-18 10:58:11,376 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:01:21,444 - root - INFO - -------------------- Update 346 --------------------
+2025-08-18 11:01:21,444 - root - INFO - Current Learning Rate: 5.40e-04
+2025-08-18 11:01:21,444 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:04:33,691 - root - INFO - -------------------- Update 347 --------------------
+2025-08-18 11:04:33,692 - root - INFO - Current Learning Rate: 5.30e-04
+2025-08-18 11:04:33,692 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:07:27,134 - root - INFO - -------------------- Update 348 --------------------
+2025-08-18 11:07:27,135 - root - INFO - Current Learning Rate: 5.20e-04
+2025-08-18 11:07:27,135 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:10:12,463 - root - INFO - -------------------- Update 349 --------------------
+2025-08-18 11:10:12,464 - root - INFO - Current Learning Rate: 5.10e-04
+2025-08-18 11:10:12,464 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:13:05,437 - root - INFO - -------------------- Update 350 --------------------
+2025-08-18 11:13:05,437 - root - INFO - Current Learning Rate: 5.01e-04
+2025-08-18 11:13:05,437 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:15:59,700 - root - INFO - -------------------- Update 351 --------------------
+2025-08-18 11:15:59,700 - root - INFO - Current Learning Rate: 4.91e-04
+2025-08-18 11:15:59,700 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:19:13,733 - root - INFO - -------------------- Update 352 --------------------
+2025-08-18 11:19:13,734 - root - INFO - Current Learning Rate: 4.81e-04
+2025-08-18 11:19:13,734 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:22:13,599 - root - INFO - -------------------- Update 353 --------------------
+2025-08-18 11:22:13,599 - root - INFO - Current Learning Rate: 4.71e-04
+2025-08-18 11:22:13,599 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:25:08,676 - root - INFO - -------------------- Update 354 --------------------
+2025-08-18 11:25:08,677 - root - INFO - Current Learning Rate: 4.61e-04
+2025-08-18 11:25:08,677 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:28:19,575 - root - INFO - -------------------- Update 355 --------------------
+2025-08-18 11:28:19,576 - root - INFO - Current Learning Rate: 4.51e-04
+2025-08-18 11:28:19,576 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:31:17,190 - root - INFO - -------------------- Update 356 --------------------
+2025-08-18 11:31:17,190 - root - INFO - Current Learning Rate: 4.41e-04
+2025-08-18 11:31:17,190 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:34:10,407 - root - INFO - -------------------- Update 357 --------------------
+2025-08-18 11:34:10,407 - root - INFO - Current Learning Rate: 4.31e-04
+2025-08-18 11:34:10,407 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:36:56,624 - root - INFO - -------------------- Update 358 --------------------
+2025-08-18 11:36:56,625 - root - INFO - Current Learning Rate: 4.21e-04
+2025-08-18 11:36:56,625 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:39:51,682 - root - INFO - -------------------- Update 359 --------------------
+2025-08-18 11:39:51,682 - root - INFO - Current Learning Rate: 4.11e-04
+2025-08-18 11:39:51,682 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:42:51,813 - root - INFO - -------------------- Update 360 --------------------
+2025-08-18 11:42:51,813 - root - INFO - Current Learning Rate: 4.01e-04
+2025-08-18 11:42:51,813 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:45:54,549 - root - INFO - -------------------- Update 361 --------------------
+2025-08-18 11:45:54,549 - root - INFO - Current Learning Rate: 3.91e-04
+2025-08-18 11:45:54,549 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:48:45,471 - root - INFO - -------------------- Update 362 --------------------
+2025-08-18 11:48:45,472 - root - INFO - Current Learning Rate: 3.81e-04
+2025-08-18 11:48:45,472 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:51:49,756 - root - INFO - -------------------- Update 363 --------------------
+2025-08-18 11:51:49,756 - root - INFO - Current Learning Rate: 3.71e-04
+2025-08-18 11:51:49,756 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:54:54,878 - root - INFO - -------------------- Update 364 --------------------
+2025-08-18 11:54:54,878 - root - INFO - Current Learning Rate: 3.61e-04
+2025-08-18 11:54:54,878 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 11:58:00,475 - root - INFO - -------------------- Update 365 --------------------
+2025-08-18 11:58:00,475 - root - INFO - Current Learning Rate: 3.51e-04
+2025-08-18 11:58:00,476 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:00:54,768 - root - INFO - -------------------- Update 366 --------------------
+2025-08-18 12:00:54,769 - root - INFO - Current Learning Rate: 3.41e-04
+2025-08-18 12:00:54,769 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:03:50,188 - root - INFO - -------------------- Update 367 --------------------
+2025-08-18 12:03:50,188 - root - INFO - Current Learning Rate: 3.31e-04
+2025-08-18 12:03:50,188 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:06:40,843 - root - INFO - -------------------- Update 368 --------------------
+2025-08-18 12:06:40,844 - root - INFO - Current Learning Rate: 3.21e-04
+2025-08-18 12:06:40,844 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:09:54,909 - root - INFO - -------------------- Update 369 --------------------
+2025-08-18 12:09:54,910 - root - INFO - Current Learning Rate: 3.11e-04
+2025-08-18 12:09:54,910 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:12:59,305 - root - INFO - -------------------- Update 370 --------------------
+2025-08-18 12:12:59,306 - root - INFO - Current Learning Rate: 3.01e-04
+2025-08-18 12:12:59,306 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:16:11,443 - root - INFO - -------------------- Update 371 --------------------
+2025-08-18 12:16:11,443 - root - INFO - Current Learning Rate: 2.91e-04
+2025-08-18 12:16:11,443 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:19:09,582 - root - INFO - -------------------- Update 372 --------------------
+2025-08-18 12:19:09,582 - root - INFO - Current Learning Rate: 2.81e-04
+2025-08-18 12:19:09,582 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:22:12,021 - root - INFO - -------------------- Update 373 --------------------
+2025-08-18 12:22:12,021 - root - INFO - Current Learning Rate: 2.71e-04
+2025-08-18 12:22:12,021 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:25:01,721 - root - INFO - -------------------- Update 374 --------------------
+2025-08-18 12:25:01,721 - root - INFO - Current Learning Rate: 2.61e-04
+2025-08-18 12:25:01,721 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:28:11,722 - root - INFO - -------------------- Update 375 --------------------
+2025-08-18 12:28:11,723 - root - INFO - Current Learning Rate: 2.51e-04
+2025-08-18 12:28:11,723 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:31:05,535 - root - INFO - -------------------- Update 376 --------------------
+2025-08-18 12:31:05,536 - root - INFO - Current Learning Rate: 2.41e-04
+2025-08-18 12:31:05,536 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:34:21,993 - root - INFO - -------------------- Update 377 --------------------
+2025-08-18 12:34:21,993 - root - INFO - Current Learning Rate: 2.31e-04
+2025-08-18 12:34:21,993 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:37:23,723 - root - INFO - -------------------- Update 378 --------------------
+2025-08-18 12:37:23,723 - root - INFO - Current Learning Rate: 2.21e-04
+2025-08-18 12:37:23,723 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:40:24,074 - root - INFO - -------------------- Update 379 --------------------
+2025-08-18 12:40:24,075 - root - INFO - Current Learning Rate: 2.11e-04
+2025-08-18 12:40:24,075 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:43:18,110 - root - INFO - -------------------- Update 380 --------------------
+2025-08-18 12:43:18,110 - root - INFO - Current Learning Rate: 2.01e-04
+2025-08-18 12:43:18,110 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:46:27,931 - root - INFO - -------------------- Update 381 --------------------
+2025-08-18 12:46:27,932 - root - INFO - Current Learning Rate: 1.91e-04
+2025-08-18 12:46:27,932 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:49:45,144 - root - INFO - -------------------- Update 382 --------------------
+2025-08-18 12:49:45,145 - root - INFO - Current Learning Rate: 1.81e-04
+2025-08-18 12:49:45,145 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:52:48,180 - root - INFO - -------------------- Update 383 --------------------
+2025-08-18 12:52:48,180 - root - INFO - Current Learning Rate: 1.71e-04
+2025-08-18 12:52:48,180 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:56:02,353 - root - INFO - -------------------- Update 384 --------------------
+2025-08-18 12:56:02,353 - root - INFO - Current Learning Rate: 1.61e-04
+2025-08-18 12:56:02,353 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 12:59:18,632 - root - INFO - -------------------- Update 385 --------------------
+2025-08-18 12:59:18,633 - root - INFO - Current Learning Rate: 1.51e-04
+2025-08-18 12:59:18,633 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:02:34,745 - root - INFO - -------------------- Update 386 --------------------
+2025-08-18 13:02:34,745 - root - INFO - Current Learning Rate: 1.41e-04
+2025-08-18 13:02:34,745 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:05:51,463 - root - INFO - -------------------- Update 387 --------------------
+2025-08-18 13:05:51,463 - root - INFO - Current Learning Rate: 1.31e-04
+2025-08-18 13:05:51,463 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:09:09,866 - root - INFO - -------------------- Update 388 --------------------
+2025-08-18 13:09:09,866 - root - INFO - Current Learning Rate: 1.21e-04
+2025-08-18 13:09:09,866 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:12:25,818 - root - INFO - -------------------- Update 389 --------------------
+2025-08-18 13:12:25,819 - root - INFO - Current Learning Rate: 1.11e-04
+2025-08-18 13:12:25,819 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:15:27,171 - root - INFO - -------------------- Update 390 --------------------
+2025-08-18 13:15:27,171 - root - INFO - Current Learning Rate: 1.01e-04
+2025-08-18 13:15:27,172 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:18:10,605 - root - INFO - -------------------- Update 391 --------------------
+2025-08-18 13:18:10,605 - root - INFO - Current Learning Rate: 9.09e-05
+2025-08-18 13:18:10,605 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:21:14,051 - root - INFO - -------------------- Update 392 --------------------
+2025-08-18 13:21:14,051 - root - INFO - Current Learning Rate: 8.09e-05
+2025-08-18 13:21:14,051 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:24:17,903 - root - INFO - -------------------- Update 393 --------------------
+2025-08-18 13:24:17,904 - root - INFO - Current Learning Rate: 7.09e-05
+2025-08-18 13:24:17,904 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:27:09,741 - root - INFO - -------------------- Update 394 --------------------
+2025-08-18 13:27:09,741 - root - INFO - Current Learning Rate: 6.09e-05
+2025-08-18 13:27:09,741 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:30:22,729 - root - INFO - -------------------- Update 395 --------------------
+2025-08-18 13:30:22,729 - root - INFO - Current Learning Rate: 5.09e-05
+2025-08-18 13:30:22,729 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:33:32,867 - root - INFO - -------------------- Update 396 --------------------
+2025-08-18 13:33:32,867 - root - INFO - Current Learning Rate: 4.10e-05
+2025-08-18 13:33:32,867 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:36:45,906 - root - INFO - -------------------- Update 397 --------------------
+2025-08-18 13:36:45,907 - root - INFO - Current Learning Rate: 3.10e-05
+2025-08-18 13:36:45,907 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:39:56,021 - root - INFO - -------------------- Update 398 --------------------
+2025-08-18 13:39:56,021 - root - INFO - Current Learning Rate: 2.10e-05
+2025-08-18 13:39:56,021 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:42:52,220 - root - INFO - -------------------- Update 399 --------------------
+2025-08-18 13:42:52,220 - root - INFO - Current Learning Rate: 1.10e-05
+2025-08-18 13:42:52,220 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:45:40,415 - root - INFO - -------------------- Update 400 --------------------
+2025-08-18 13:45:40,415 - root - INFO - Current Learning Rate: 1.00e-06
+2025-08-18 13:45:40,415 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:48:29,038 - root - INFO - -------------------- Update 401 --------------------
+2025-08-18 13:48:29,038 - root - INFO - Current Learning Rate: 1.10e-05
+2025-08-18 13:48:29,038 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:51:27,141 - root - INFO - -------------------- Update 402 --------------------
+2025-08-18 13:51:27,141 - root - INFO - Current Learning Rate: 2.10e-05
+2025-08-18 13:51:27,141 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:54:25,121 - root - INFO - -------------------- Update 403 --------------------
+2025-08-18 13:54:25,121 - root - INFO - Current Learning Rate: 3.10e-05
+2025-08-18 13:54:25,121 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 13:57:20,536 - root - INFO - -------------------- Update 404 --------------------
+2025-08-18 13:57:20,536 - root - INFO - Current Learning Rate: 4.10e-05
+2025-08-18 13:57:20,536 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:00:19,082 - root - INFO - -------------------- Update 405 --------------------
+2025-08-18 14:00:19,082 - root - INFO - Current Learning Rate: 5.09e-05
+2025-08-18 14:00:19,083 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:03:11,432 - root - INFO - -------------------- Update 406 --------------------
+2025-08-18 14:03:11,432 - root - INFO - Current Learning Rate: 6.09e-05
+2025-08-18 14:03:11,433 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:05:58,880 - root - INFO - -------------------- Update 407 --------------------
+2025-08-18 14:05:58,881 - root - INFO - Current Learning Rate: 7.09e-05
+2025-08-18 14:05:58,881 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:08:44,413 - root - INFO - -------------------- Update 408 --------------------
+2025-08-18 14:08:44,414 - root - INFO - Current Learning Rate: 8.09e-05
+2025-08-18 14:08:44,414 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:11:33,579 - root - INFO - -------------------- Update 409 --------------------
+2025-08-18 14:11:33,579 - root - INFO - Current Learning Rate: 9.09e-05
+2025-08-18 14:11:33,579 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:14:21,788 - root - INFO - -------------------- Update 410 --------------------
+2025-08-18 14:14:21,788 - root - INFO - Current Learning Rate: 1.01e-04
+2025-08-18 14:14:21,788 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:17:00,506 - root - INFO - -------------------- Update 411 --------------------
+2025-08-18 14:17:00,506 - root - INFO - Current Learning Rate: 1.11e-04
+2025-08-18 14:17:00,506 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:19:46,176 - root - INFO - -------------------- Update 412 --------------------
+2025-08-18 14:19:46,176 - root - INFO - Current Learning Rate: 1.21e-04
+2025-08-18 14:19:46,177 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:22:42,334 - root - INFO - -------------------- Update 413 --------------------
+2025-08-18 14:22:42,335 - root - INFO - Current Learning Rate: 1.31e-04
+2025-08-18 14:22:42,335 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:25:34,565 - root - INFO - -------------------- Update 414 --------------------
+2025-08-18 14:25:34,565 - root - INFO - Current Learning Rate: 1.41e-04
+2025-08-18 14:25:34,565 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:28:28,781 - root - INFO - -------------------- Update 415 --------------------
+2025-08-18 14:28:28,781 - root - INFO - Current Learning Rate: 1.51e-04
+2025-08-18 14:28:28,781 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:31:19,302 - root - INFO - -------------------- Update 416 --------------------
+2025-08-18 14:31:19,302 - root - INFO - Current Learning Rate: 1.61e-04
+2025-08-18 14:31:19,302 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:34:03,163 - root - INFO - -------------------- Update 417 --------------------
+2025-08-18 14:34:03,163 - root - INFO - Current Learning Rate: 1.71e-04
+2025-08-18 14:34:03,163 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:37:07,805 - root - INFO - -------------------- Update 418 --------------------
+2025-08-18 14:37:07,805 - root - INFO - Current Learning Rate: 1.81e-04
+2025-08-18 14:37:07,805 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:39:59,734 - root - INFO - -------------------- Update 419 --------------------
+2025-08-18 14:39:59,734 - root - INFO - Current Learning Rate: 1.91e-04
+2025-08-18 14:39:59,734 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:43:03,135 - root - INFO - -------------------- Update 420 --------------------
+2025-08-18 14:43:03,136 - root - INFO - Current Learning Rate: 2.01e-04
+2025-08-18 14:43:03,136 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:47:09,669 - root - INFO - -------------------- Update 421 --------------------
+2025-08-18 14:47:09,669 - root - INFO - Current Learning Rate: 2.11e-04
+2025-08-18 14:47:09,669 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:51:20,453 - root - INFO - -------------------- Update 422 --------------------
+2025-08-18 14:51:20,454 - root - INFO - Current Learning Rate: 2.21e-04
+2025-08-18 14:51:20,454 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:54:44,051 - root - INFO - -------------------- Update 423 --------------------
+2025-08-18 14:54:44,051 - root - INFO - Current Learning Rate: 2.31e-04
+2025-08-18 14:54:44,051 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 14:58:48,525 - root - INFO - -------------------- Update 424 --------------------
+2025-08-18 14:58:48,525 - root - INFO - Current Learning Rate: 2.41e-04
+2025-08-18 14:58:48,525 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:03:01,201 - root - INFO - -------------------- Update 425 --------------------
+2025-08-18 15:03:01,202 - root - INFO - Current Learning Rate: 2.51e-04
+2025-08-18 15:03:01,202 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:07:20,417 - root - INFO - -------------------- Update 426 --------------------
+2025-08-18 15:07:20,417 - root - INFO - Current Learning Rate: 2.61e-04
+2025-08-18 15:07:20,417 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:11:32,908 - root - INFO - -------------------- Update 427 --------------------
+2025-08-18 15:11:32,908 - root - INFO - Current Learning Rate: 2.71e-04
+2025-08-18 15:11:32,908 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:15:44,848 - root - INFO - -------------------- Update 428 --------------------
+2025-08-18 15:15:44,849 - root - INFO - Current Learning Rate: 2.81e-04
+2025-08-18 15:15:44,849 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:19:53,459 - root - INFO - -------------------- Update 429 --------------------
+2025-08-18 15:19:53,459 - root - INFO - Current Learning Rate: 2.91e-04
+2025-08-18 15:19:53,459 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:23:59,186 - root - INFO - -------------------- Update 430 --------------------
+2025-08-18 15:23:59,187 - root - INFO - Current Learning Rate: 3.01e-04
+2025-08-18 15:23:59,187 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:28:10,292 - root - INFO - -------------------- Update 431 --------------------
+2025-08-18 15:28:10,292 - root - INFO - Current Learning Rate: 3.11e-04
+2025-08-18 15:28:10,292 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:32:16,115 - root - INFO - -------------------- Update 432 --------------------
+2025-08-18 15:32:16,115 - root - INFO - Current Learning Rate: 3.21e-04
+2025-08-18 15:32:16,115 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:36:34,553 - root - INFO - -------------------- Update 433 --------------------
+2025-08-18 15:36:34,553 - root - INFO - Current Learning Rate: 3.31e-04
+2025-08-18 15:36:34,553 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:40:40,986 - root - INFO - -------------------- Update 434 --------------------
+2025-08-18 15:40:40,987 - root - INFO - Current Learning Rate: 3.41e-04
+2025-08-18 15:40:40,987 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:44:49,718 - root - INFO - -------------------- Update 435 --------------------
+2025-08-18 15:44:49,718 - root - INFO - Current Learning Rate: 3.51e-04
+2025-08-18 15:44:49,718 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:48:58,797 - root - INFO - -------------------- Update 436 --------------------
+2025-08-18 15:48:58,797 - root - INFO - Current Learning Rate: 3.61e-04
+2025-08-18 15:48:58,797 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:53:10,203 - root - INFO - -------------------- Update 437 --------------------
+2025-08-18 15:53:10,203 - root - INFO - Current Learning Rate: 3.71e-04
+2025-08-18 15:53:10,203 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 15:57:23,535 - root - INFO - -------------------- Update 438 --------------------
+2025-08-18 15:57:23,536 - root - INFO - Current Learning Rate: 3.81e-04
+2025-08-18 15:57:23,536 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:01:38,399 - root - INFO - -------------------- Update 439 --------------------
+2025-08-18 16:01:38,399 - root - INFO - Current Learning Rate: 3.91e-04
+2025-08-18 16:01:38,399 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:05:45,104 - root - INFO - -------------------- Update 440 --------------------
+2025-08-18 16:05:45,104 - root - INFO - Current Learning Rate: 4.01e-04
+2025-08-18 16:05:45,104 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:09:52,538 - root - INFO - -------------------- Update 441 --------------------
+2025-08-18 16:09:52,538 - root - INFO - Current Learning Rate: 4.11e-04
+2025-08-18 16:09:52,539 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:14:07,683 - root - INFO - -------------------- Update 442 --------------------
+2025-08-18 16:14:07,684 - root - INFO - Current Learning Rate: 4.21e-04
+2025-08-18 16:14:07,684 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:18:11,477 - root - INFO - -------------------- Update 443 --------------------
+2025-08-18 16:18:11,477 - root - INFO - Current Learning Rate: 4.31e-04
+2025-08-18 16:18:11,477 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:22:25,928 - root - INFO - -------------------- Update 444 --------------------
+2025-08-18 16:22:25,929 - root - INFO - Current Learning Rate: 4.41e-04
+2025-08-18 16:22:25,929 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:26:21,145 - root - INFO - -------------------- Update 445 --------------------
+2025-08-18 16:26:21,145 - root - INFO - Current Learning Rate: 4.51e-04
+2025-08-18 16:26:21,145 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:30:19,083 - root - INFO - -------------------- Update 446 --------------------
+2025-08-18 16:30:19,083 - root - INFO - Current Learning Rate: 4.61e-04
+2025-08-18 16:30:19,083 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:34:17,541 - root - INFO - -------------------- Update 447 --------------------
+2025-08-18 16:34:17,542 - root - INFO - Current Learning Rate: 4.71e-04
+2025-08-18 16:34:17,542 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:38:04,966 - root - INFO - -------------------- Update 448 --------------------
+2025-08-18 16:38:04,967 - root - INFO - Current Learning Rate: 4.81e-04
+2025-08-18 16:38:04,967 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:41:55,494 - root - INFO - -------------------- Update 449 --------------------
+2025-08-18 16:41:55,495 - root - INFO - Current Learning Rate: 4.91e-04
+2025-08-18 16:41:55,495 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:45:52,477 - root - INFO - -------------------- Update 450 --------------------
+2025-08-18 16:45:52,477 - root - INFO - Current Learning Rate: 5.01e-04
+2025-08-18 16:45:52,478 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:49:52,298 - root - INFO - -------------------- Update 451 --------------------
+2025-08-18 16:49:52,298 - root - INFO - Current Learning Rate: 5.10e-04
+2025-08-18 16:49:52,298 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:53:56,370 - root - INFO - -------------------- Update 452 --------------------
+2025-08-18 16:53:56,370 - root - INFO - Current Learning Rate: 5.20e-04
+2025-08-18 16:53:56,370 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 16:58:11,042 - root - INFO - -------------------- Update 453 --------------------
+2025-08-18 16:58:11,042 - root - INFO - Current Learning Rate: 5.30e-04
+2025-08-18 16:58:11,042 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:02:23,722 - root - INFO - -------------------- Update 454 --------------------
+2025-08-18 17:02:23,722 - root - INFO - Current Learning Rate: 5.40e-04
+2025-08-18 17:02:23,722 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:06:29,148 - root - INFO - -------------------- Update 455 --------------------
+2025-08-18 17:06:29,148 - root - INFO - Current Learning Rate: 5.50e-04
+2025-08-18 17:06:29,148 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:10:37,467 - root - INFO - -------------------- Update 456 --------------------
+2025-08-18 17:10:37,467 - root - INFO - Current Learning Rate: 5.60e-04
+2025-08-18 17:10:37,467 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:14:52,492 - root - INFO - -------------------- Update 457 --------------------
+2025-08-18 17:14:52,492 - root - INFO - Current Learning Rate: 5.70e-04
+2025-08-18 17:14:52,493 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:18:57,308 - root - INFO - -------------------- Update 458 --------------------
+2025-08-18 17:18:57,308 - root - INFO - Current Learning Rate: 5.80e-04
+2025-08-18 17:18:57,308 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:23:10,599 - root - INFO - -------------------- Update 459 --------------------
+2025-08-18 17:23:10,599 - root - INFO - Current Learning Rate: 5.90e-04
+2025-08-18 17:23:10,599 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:27:29,580 - root - INFO - -------------------- Update 460 --------------------
+2025-08-18 17:27:29,580 - root - INFO - Current Learning Rate: 6.00e-04
+2025-08-18 17:27:29,580 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:31:53,087 - root - INFO - -------------------- Update 461 --------------------
+2025-08-18 17:31:53,087 - root - INFO - Current Learning Rate: 6.10e-04
+2025-08-18 17:31:53,087 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:36:17,799 - root - INFO - -------------------- Update 462 --------------------
+2025-08-18 17:36:17,799 - root - INFO - Current Learning Rate: 6.20e-04
+2025-08-18 17:36:17,799 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:40:46,855 - root - INFO - -------------------- Update 463 --------------------
+2025-08-18 17:40:46,855 - root - INFO - Current Learning Rate: 6.30e-04
+2025-08-18 17:40:46,855 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:44:57,729 - root - INFO - -------------------- Update 464 --------------------
+2025-08-18 17:44:57,729 - root - INFO - Current Learning Rate: 6.40e-04
+2025-08-18 17:44:57,729 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:49:08,851 - root - INFO - -------------------- Update 465 --------------------
+2025-08-18 17:49:08,851 - root - INFO - Current Learning Rate: 6.50e-04
+2025-08-18 17:49:08,851 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:53:23,466 - root - INFO - -------------------- Update 466 --------------------
+2025-08-18 17:53:23,466 - root - INFO - Current Learning Rate: 6.60e-04
+2025-08-18 17:53:23,466 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 17:57:40,338 - root - INFO - -------------------- Update 467 --------------------
+2025-08-18 17:57:40,338 - root - INFO - Current Learning Rate: 6.70e-04
+2025-08-18 17:57:40,338 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:02:13,359 - root - INFO - -------------------- Update 468 --------------------
+2025-08-18 18:02:13,359 - root - INFO - Current Learning Rate: 6.80e-04
+2025-08-18 18:02:13,359 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:06:54,421 - root - INFO - -------------------- Update 469 --------------------
+2025-08-18 18:06:54,422 - root - INFO - Current Learning Rate: 6.90e-04
+2025-08-18 18:06:54,422 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:11:31,686 - root - INFO - -------------------- Update 470 --------------------
+2025-08-18 18:11:31,686 - root - INFO - Current Learning Rate: 7.00e-04
+2025-08-18 18:11:31,686 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:16:04,291 - root - INFO - -------------------- Update 471 --------------------
+2025-08-18 18:16:04,292 - root - INFO - Current Learning Rate: 7.10e-04
+2025-08-18 18:16:04,292 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:20:40,571 - root - INFO - -------------------- Update 472 --------------------
+2025-08-18 18:20:40,571 - root - INFO - Current Learning Rate: 7.20e-04
+2025-08-18 18:20:40,571 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:25:22,116 - root - INFO - -------------------- Update 473 --------------------
+2025-08-18 18:25:22,117 - root - INFO - Current Learning Rate: 7.30e-04
+2025-08-18 18:25:22,117 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:30:11,478 - root - INFO - -------------------- Update 474 --------------------
+2025-08-18 18:30:11,479 - root - INFO - Current Learning Rate: 7.40e-04
+2025-08-18 18:30:11,479 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:34:50,484 - root - INFO - -------------------- Update 475 --------------------
+2025-08-18 18:34:50,484 - root - INFO - Current Learning Rate: 7.50e-04
+2025-08-18 18:34:50,484 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:39:26,922 - root - INFO - -------------------- Update 476 --------------------
+2025-08-18 18:39:26,922 - root - INFO - Current Learning Rate: 7.60e-04
+2025-08-18 18:39:26,922 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:44:12,850 - root - INFO - -------------------- Update 477 --------------------
+2025-08-18 18:44:12,850 - root - INFO - Current Learning Rate: 7.70e-04
+2025-08-18 18:44:12,851 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:48:54,383 - root - INFO - -------------------- Update 478 --------------------
+2025-08-18 18:48:54,383 - root - INFO - Current Learning Rate: 7.80e-04
+2025-08-18 18:48:54,383 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:53:31,473 - root - INFO - -------------------- Update 479 --------------------
+2025-08-18 18:53:31,473 - root - INFO - Current Learning Rate: 7.90e-04
+2025-08-18 18:53:31,473 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 18:58:05,548 - root - INFO - -------------------- Update 480 --------------------
+2025-08-18 18:58:05,548 - root - INFO - Current Learning Rate: 8.00e-04
+2025-08-18 18:58:05,548 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:02:42,045 - root - INFO - -------------------- Update 481 --------------------
+2025-08-18 19:02:42,045 - root - INFO - Current Learning Rate: 8.10e-04
+2025-08-18 19:02:42,045 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:07:22,513 - root - INFO - -------------------- Update 482 --------------------
+2025-08-18 19:07:22,514 - root - INFO - Current Learning Rate: 8.20e-04
+2025-08-18 19:07:22,514 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:11:51,759 - root - INFO - -------------------- Update 483 --------------------
+2025-08-18 19:11:51,760 - root - INFO - Current Learning Rate: 8.30e-04
+2025-08-18 19:11:51,760 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:16:25,127 - root - INFO - -------------------- Update 484 --------------------
+2025-08-18 19:16:25,127 - root - INFO - Current Learning Rate: 8.40e-04
+2025-08-18 19:16:25,127 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:20:54,585 - root - INFO - -------------------- Update 485 --------------------
+2025-08-18 19:20:54,585 - root - INFO - Current Learning Rate: 8.50e-04
+2025-08-18 19:20:54,585 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:25:35,194 - root - INFO - -------------------- Update 486 --------------------
+2025-08-18 19:25:35,195 - root - INFO - Current Learning Rate: 8.60e-04
+2025-08-18 19:25:35,195 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:30:13,409 - root - INFO - -------------------- Update 487 --------------------
+2025-08-18 19:30:13,409 - root - INFO - Current Learning Rate: 8.70e-04
+2025-08-18 19:30:13,409 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:34:53,823 - root - INFO - -------------------- Update 488 --------------------
+2025-08-18 19:34:53,823 - root - INFO - Current Learning Rate: 8.80e-04
+2025-08-18 19:34:53,823 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:39:24,822 - root - INFO - -------------------- Update 489 --------------------
+2025-08-18 19:39:24,822 - root - INFO - Current Learning Rate: 8.90e-04
+2025-08-18 19:39:24,822 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:43:51,545 - root - INFO - -------------------- Update 490 --------------------
+2025-08-18 19:43:51,546 - root - INFO - Current Learning Rate: 9.00e-04
+2025-08-18 19:43:51,546 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:48:23,785 - root - INFO - -------------------- Update 491 --------------------
+2025-08-18 19:48:23,785 - root - INFO - Current Learning Rate: 9.10e-04
+2025-08-18 19:48:23,785 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:52:52,811 - root - INFO - -------------------- Update 492 --------------------
+2025-08-18 19:52:52,811 - root - INFO - Current Learning Rate: 9.20e-04
+2025-08-18 19:52:52,812 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 19:57:07,741 - root - INFO - -------------------- Update 493 --------------------
+2025-08-18 19:57:07,741 - root - INFO - Current Learning Rate: 9.30e-04
+2025-08-18 19:57:07,742 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:01:33,133 - root - INFO - -------------------- Update 494 --------------------
+2025-08-18 20:01:33,134 - root - INFO - Current Learning Rate: 9.40e-04
+2025-08-18 20:01:33,134 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:05:59,430 - root - INFO - -------------------- Update 495 --------------------
+2025-08-18 20:05:59,431 - root - INFO - Current Learning Rate: 9.50e-04
+2025-08-18 20:05:59,431 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:10:25,644 - root - INFO - -------------------- Update 496 --------------------
+2025-08-18 20:10:25,644 - root - INFO - Current Learning Rate: 9.60e-04
+2025-08-18 20:10:25,644 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:14:49,234 - root - INFO - -------------------- Update 497 --------------------
+2025-08-18 20:14:49,235 - root - INFO - Current Learning Rate: 9.70e-04
+2025-08-18 20:14:49,235 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:19:25,062 - root - INFO - -------------------- Update 498 --------------------
+2025-08-18 20:19:25,062 - root - INFO - Current Learning Rate: 9.80e-04
+2025-08-18 20:19:25,062 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:23:54,374 - root - INFO - -------------------- Update 499 --------------------
+2025-08-18 20:23:54,375 - root - INFO - Current Learning Rate: 9.90e-04
+2025-08-18 20:23:54,375 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:28:23,686 - root - INFO - -------------------- Update 500 --------------------
+2025-08-18 20:28:23,686 - root - INFO - Current Learning Rate: 1.00e-03
+2025-08-18 20:28:23,686 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:33:02,785 - root - INFO - -------------------- Update 501 --------------------
+2025-08-18 20:33:02,785 - root - INFO - Current Learning Rate: 9.90e-04
+2025-08-18 20:33:02,785 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:37:35,512 - root - INFO - -------------------- Update 502 --------------------
+2025-08-18 20:37:35,512 - root - INFO - Current Learning Rate: 9.80e-04
+2025-08-18 20:37:35,512 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:42:03,428 - root - INFO - -------------------- Update 503 --------------------
+2025-08-18 20:42:03,428 - root - INFO - Current Learning Rate: 9.70e-04
+2025-08-18 20:42:03,428 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:46:33,458 - root - INFO - -------------------- Update 504 --------------------
+2025-08-18 20:46:33,459 - root - INFO - Current Learning Rate: 9.60e-04
+2025-08-18 20:46:33,459 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:51:11,663 - root - INFO - -------------------- Update 505 --------------------
+2025-08-18 20:51:11,663 - root - INFO - Current Learning Rate: 9.50e-04
+2025-08-18 20:51:11,663 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 20:55:33,115 - root - INFO - -------------------- Update 506 --------------------
+2025-08-18 20:55:33,115 - root - INFO - Current Learning Rate: 9.40e-04
+2025-08-18 20:55:33,115 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:00:02,218 - root - INFO - -------------------- Update 507 --------------------
+2025-08-18 21:00:02,218 - root - INFO - Current Learning Rate: 9.30e-04
+2025-08-18 21:00:02,218 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:04:25,297 - root - INFO - -------------------- Update 508 --------------------
+2025-08-18 21:04:25,297 - root - INFO - Current Learning Rate: 9.20e-04
+2025-08-18 21:04:25,297 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:08:56,607 - root - INFO - -------------------- Update 509 --------------------
+2025-08-18 21:08:56,607 - root - INFO - Current Learning Rate: 9.10e-04
+2025-08-18 21:08:56,607 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:13:25,245 - root - INFO - -------------------- Update 510 --------------------
+2025-08-18 21:13:25,245 - root - INFO - Current Learning Rate: 9.00e-04
+2025-08-18 21:13:25,245 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:18:00,013 - root - INFO - -------------------- Update 511 --------------------
+2025-08-18 21:18:00,014 - root - INFO - Current Learning Rate: 8.90e-04
+2025-08-18 21:18:00,014 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:22:27,762 - root - INFO - -------------------- Update 512 --------------------
+2025-08-18 21:22:27,762 - root - INFO - Current Learning Rate: 8.80e-04
+2025-08-18 21:22:27,762 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:26:53,815 - root - INFO - -------------------- Update 513 --------------------
+2025-08-18 21:26:53,815 - root - INFO - Current Learning Rate: 8.70e-04
+2025-08-18 21:26:53,815 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:31:34,940 - root - INFO - -------------------- Update 514 --------------------
+2025-08-18 21:31:34,940 - root - INFO - Current Learning Rate: 8.60e-04
+2025-08-18 21:31:34,940 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:36:02,452 - root - INFO - -------------------- Update 515 --------------------
+2025-08-18 21:36:02,453 - root - INFO - Current Learning Rate: 8.50e-04
+2025-08-18 21:36:02,453 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:40:38,684 - root - INFO - -------------------- Update 516 --------------------
+2025-08-18 21:40:38,684 - root - INFO - Current Learning Rate: 8.40e-04
+2025-08-18 21:40:38,684 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:45:13,028 - root - INFO - -------------------- Update 517 --------------------
+2025-08-18 21:45:13,028 - root - INFO - Current Learning Rate: 8.30e-04
+2025-08-18 21:45:13,028 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:49:45,870 - root - INFO - -------------------- Update 518 --------------------
+2025-08-18 21:49:45,870 - root - INFO - Current Learning Rate: 8.20e-04
+2025-08-18 21:49:45,871 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:54:15,569 - root - INFO - -------------------- Update 519 --------------------
+2025-08-18 21:54:15,569 - root - INFO - Current Learning Rate: 8.10e-04
+2025-08-18 21:54:15,569 - root - INFO - Best Update :253, Best Step :44, Best Reward: 0.8140495867768596
+2025-08-18 21:58:45,016 - root - INFO - -------------------- Update 520 --------------------
+2025-08-18 21:58:45,017 - root - INFO - Current Learning Rate: 8.00e-04
+2025-08-18 21:58:45,017 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:03:10,641 - root - INFO - -------------------- Update 521 --------------------
+2025-08-18 22:03:10,641 - root - INFO - Current Learning Rate: 7.90e-04
+2025-08-18 22:03:10,641 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:07:42,220 - root - INFO - -------------------- Update 522 --------------------
+2025-08-18 22:07:42,220 - root - INFO - Current Learning Rate: 7.80e-04
+2025-08-18 22:07:42,222 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:12:07,920 - root - INFO - -------------------- Update 523 --------------------
+2025-08-18 22:12:07,920 - root - INFO - Current Learning Rate: 7.70e-04
+2025-08-18 22:12:07,920 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:16:36,438 - root - INFO - -------------------- Update 524 --------------------
+2025-08-18 22:16:36,439 - root - INFO - Current Learning Rate: 7.60e-04
+2025-08-18 22:16:36,439 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:21:07,510 - root - INFO - -------------------- Update 525 --------------------
+2025-08-18 22:21:07,510 - root - INFO - Current Learning Rate: 7.50e-04
+2025-08-18 22:21:07,510 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:25:37,372 - root - INFO - -------------------- Update 526 --------------------
+2025-08-18 22:25:37,372 - root - INFO - Current Learning Rate: 7.40e-04
+2025-08-18 22:25:37,372 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:30:02,023 - root - INFO - -------------------- Update 527 --------------------
+2025-08-18 22:30:02,023 - root - INFO - Current Learning Rate: 7.30e-04
+2025-08-18 22:30:02,023 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:34:36,301 - root - INFO - -------------------- Update 528 --------------------
+2025-08-18 22:34:36,302 - root - INFO - Current Learning Rate: 7.20e-04
+2025-08-18 22:34:36,302 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:39:00,273 - root - INFO - -------------------- Update 529 --------------------
+2025-08-18 22:39:00,273 - root - INFO - Current Learning Rate: 7.10e-04
+2025-08-18 22:39:00,273 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:43:27,224 - root - INFO - -------------------- Update 530 --------------------
+2025-08-18 22:43:27,224 - root - INFO - Current Learning Rate: 7.00e-04
+2025-08-18 22:43:27,224 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:47:50,690 - root - INFO - -------------------- Update 531 --------------------
+2025-08-18 22:47:50,690 - root - INFO - Current Learning Rate: 6.90e-04
+2025-08-18 22:47:50,690 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:52:11,415 - root - INFO - -------------------- Update 532 --------------------
+2025-08-18 22:52:11,416 - root - INFO - Current Learning Rate: 6.80e-04
+2025-08-18 22:52:11,416 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 22:56:27,178 - root - INFO - -------------------- Update 533 --------------------
+2025-08-18 22:56:27,178 - root - INFO - Current Learning Rate: 6.70e-04
+2025-08-18 22:56:27,178 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:00:55,900 - root - INFO - -------------------- Update 534 --------------------
+2025-08-18 23:00:55,900 - root - INFO - Current Learning Rate: 6.60e-04
+2025-08-18 23:00:55,900 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:05:17,593 - root - INFO - -------------------- Update 535 --------------------
+2025-08-18 23:05:17,593 - root - INFO - Current Learning Rate: 6.50e-04
+2025-08-18 23:05:17,593 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:09:49,595 - root - INFO - -------------------- Update 536 --------------------
+2025-08-18 23:09:49,595 - root - INFO - Current Learning Rate: 6.40e-04
+2025-08-18 23:09:49,595 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:14:24,550 - root - INFO - -------------------- Update 537 --------------------
+2025-08-18 23:14:24,550 - root - INFO - Current Learning Rate: 6.30e-04
+2025-08-18 23:14:24,550 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:18:52,564 - root - INFO - -------------------- Update 538 --------------------
+2025-08-18 23:18:52,564 - root - INFO - Current Learning Rate: 6.20e-04
+2025-08-18 23:18:52,565 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:23:25,472 - root - INFO - -------------------- Update 539 --------------------
+2025-08-18 23:23:25,472 - root - INFO - Current Learning Rate: 6.10e-04
+2025-08-18 23:23:25,472 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:27:58,440 - root - INFO - -------------------- Update 540 --------------------
+2025-08-18 23:27:58,441 - root - INFO - Current Learning Rate: 6.00e-04
+2025-08-18 23:27:58,441 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:32:27,212 - root - INFO - -------------------- Update 541 --------------------
+2025-08-18 23:32:27,212 - root - INFO - Current Learning Rate: 5.90e-04
+2025-08-18 23:32:27,212 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:36:54,950 - root - INFO - -------------------- Update 542 --------------------
+2025-08-18 23:36:54,951 - root - INFO - Current Learning Rate: 5.80e-04
+2025-08-18 23:36:54,951 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:41:18,558 - root - INFO - -------------------- Update 543 --------------------
+2025-08-18 23:41:18,558 - root - INFO - Current Learning Rate: 5.70e-04
+2025-08-18 23:41:18,558 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:45:49,179 - root - INFO - -------------------- Update 544 --------------------
+2025-08-18 23:45:49,180 - root - INFO - Current Learning Rate: 5.60e-04
+2025-08-18 23:45:49,180 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:50:06,870 - root - INFO - -------------------- Update 545 --------------------
+2025-08-18 23:50:06,870 - root - INFO - Current Learning Rate: 5.50e-04
+2025-08-18 23:50:06,870 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:54:43,040 - root - INFO - -------------------- Update 546 --------------------
+2025-08-18 23:54:43,040 - root - INFO - Current Learning Rate: 5.40e-04
+2025-08-18 23:54:43,040 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-18 23:59:03,538 - root - INFO - -------------------- Update 547 --------------------
+2025-08-18 23:59:03,538 - root - INFO - Current Learning Rate: 5.30e-04
+2025-08-18 23:59:03,538 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:03:18,804 - root - INFO - -------------------- Update 548 --------------------
+2025-08-19 00:03:18,804 - root - INFO - Current Learning Rate: 5.20e-04
+2025-08-19 00:03:18,804 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:07:36,416 - root - INFO - -------------------- Update 549 --------------------
+2025-08-19 00:07:36,416 - root - INFO - Current Learning Rate: 5.10e-04
+2025-08-19 00:07:36,416 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:11:55,207 - root - INFO - -------------------- Update 550 --------------------
+2025-08-19 00:11:55,208 - root - INFO - Current Learning Rate: 5.01e-04
+2025-08-19 00:11:55,208 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:16:17,745 - root - INFO - -------------------- Update 551 --------------------
+2025-08-19 00:16:17,745 - root - INFO - Current Learning Rate: 4.91e-04
+2025-08-19 00:16:17,745 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:20:38,571 - root - INFO - -------------------- Update 552 --------------------
+2025-08-19 00:20:38,572 - root - INFO - Current Learning Rate: 4.81e-04
+2025-08-19 00:20:38,572 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:24:59,255 - root - INFO - -------------------- Update 553 --------------------
+2025-08-19 00:24:59,255 - root - INFO - Current Learning Rate: 4.71e-04
+2025-08-19 00:24:59,255 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:29:27,907 - root - INFO - -------------------- Update 554 --------------------
+2025-08-19 00:29:27,908 - root - INFO - Current Learning Rate: 4.61e-04
+2025-08-19 00:29:27,908 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:33:52,714 - root - INFO - -------------------- Update 555 --------------------
+2025-08-19 00:33:52,714 - root - INFO - Current Learning Rate: 4.51e-04
+2025-08-19 00:33:52,714 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:38:11,338 - root - INFO - -------------------- Update 556 --------------------
+2025-08-19 00:38:11,339 - root - INFO - Current Learning Rate: 4.41e-04
+2025-08-19 00:38:11,339 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:42:34,986 - root - INFO - -------------------- Update 557 --------------------
+2025-08-19 00:42:34,986 - root - INFO - Current Learning Rate: 4.31e-04
+2025-08-19 00:42:34,986 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:46:55,638 - root - INFO - -------------------- Update 558 --------------------
+2025-08-19 00:46:55,638 - root - INFO - Current Learning Rate: 4.21e-04
+2025-08-19 00:46:55,638 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:51:22,301 - root - INFO - -------------------- Update 559 --------------------
+2025-08-19 00:51:22,301 - root - INFO - Current Learning Rate: 4.11e-04
+2025-08-19 00:51:22,301 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 00:55:43,833 - root - INFO - -------------------- Update 560 --------------------
+2025-08-19 00:55:43,834 - root - INFO - Current Learning Rate: 4.01e-04
+2025-08-19 00:55:43,834 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:00:09,233 - root - INFO - -------------------- Update 561 --------------------
+2025-08-19 01:00:09,233 - root - INFO - Current Learning Rate: 3.91e-04
+2025-08-19 01:00:09,234 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:04:25,145 - root - INFO - -------------------- Update 562 --------------------
+2025-08-19 01:04:25,145 - root - INFO - Current Learning Rate: 3.81e-04
+2025-08-19 01:04:25,145 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:08:49,106 - root - INFO - -------------------- Update 563 --------------------
+2025-08-19 01:08:49,106 - root - INFO - Current Learning Rate: 3.71e-04
+2025-08-19 01:08:49,106 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:13:13,993 - root - INFO - -------------------- Update 564 --------------------
+2025-08-19 01:13:13,993 - root - INFO - Current Learning Rate: 3.61e-04
+2025-08-19 01:13:13,993 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:17:34,481 - root - INFO - -------------------- Update 565 --------------------
+2025-08-19 01:17:34,482 - root - INFO - Current Learning Rate: 3.51e-04
+2025-08-19 01:17:34,482 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:21:48,830 - root - INFO - -------------------- Update 566 --------------------
+2025-08-19 01:21:48,831 - root - INFO - Current Learning Rate: 3.41e-04
+2025-08-19 01:21:48,831 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:26:09,585 - root - INFO - -------------------- Update 567 --------------------
+2025-08-19 01:26:09,586 - root - INFO - Current Learning Rate: 3.31e-04
+2025-08-19 01:26:09,586 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:30:33,518 - root - INFO - -------------------- Update 568 --------------------
+2025-08-19 01:30:33,518 - root - INFO - Current Learning Rate: 3.21e-04
+2025-08-19 01:30:33,518 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:34:49,688 - root - INFO - -------------------- Update 569 --------------------
+2025-08-19 01:34:49,688 - root - INFO - Current Learning Rate: 3.11e-04
+2025-08-19 01:34:49,688 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:39:15,614 - root - INFO - -------------------- Update 570 --------------------
+2025-08-19 01:39:15,615 - root - INFO - Current Learning Rate: 3.01e-04
+2025-08-19 01:39:15,615 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:43:35,553 - root - INFO - -------------------- Update 571 --------------------
+2025-08-19 01:43:35,553 - root - INFO - Current Learning Rate: 2.91e-04
+2025-08-19 01:43:35,553 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:47:52,687 - root - INFO - -------------------- Update 572 --------------------
+2025-08-19 01:47:52,688 - root - INFO - Current Learning Rate: 2.81e-04
+2025-08-19 01:47:52,688 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:52:07,148 - root - INFO - -------------------- Update 573 --------------------
+2025-08-19 01:52:07,148 - root - INFO - Current Learning Rate: 2.71e-04
+2025-08-19 01:52:07,148 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 01:56:21,650 - root - INFO - -------------------- Update 574 --------------------
+2025-08-19 01:56:21,650 - root - INFO - Current Learning Rate: 2.61e-04
+2025-08-19 01:56:21,650 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:00:41,050 - root - INFO - -------------------- Update 575 --------------------
+2025-08-19 02:00:41,051 - root - INFO - Current Learning Rate: 2.51e-04
+2025-08-19 02:00:41,051 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:05:01,786 - root - INFO - -------------------- Update 576 --------------------
+2025-08-19 02:05:01,786 - root - INFO - Current Learning Rate: 2.41e-04
+2025-08-19 02:05:01,786 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:09:19,492 - root - INFO - -------------------- Update 577 --------------------
+2025-08-19 02:09:19,492 - root - INFO - Current Learning Rate: 2.31e-04
+2025-08-19 02:09:19,493 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:13:38,171 - root - INFO - -------------------- Update 578 --------------------
+2025-08-19 02:13:38,171 - root - INFO - Current Learning Rate: 2.21e-04
+2025-08-19 02:13:38,171 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:17:56,551 - root - INFO - -------------------- Update 579 --------------------
+2025-08-19 02:17:56,555 - root - INFO - Current Learning Rate: 2.11e-04
+2025-08-19 02:17:56,555 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:22:18,362 - root - INFO - -------------------- Update 580 --------------------
+2025-08-19 02:22:18,362 - root - INFO - Current Learning Rate: 2.01e-04
+2025-08-19 02:22:18,362 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:26:40,346 - root - INFO - -------------------- Update 581 --------------------
+2025-08-19 02:26:40,346 - root - INFO - Current Learning Rate: 1.91e-04
+2025-08-19 02:26:40,346 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:31:03,165 - root - INFO - -------------------- Update 582 --------------------
+2025-08-19 02:31:03,165 - root - INFO - Current Learning Rate: 1.81e-04
+2025-08-19 02:31:03,165 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:35:26,050 - root - INFO - -------------------- Update 583 --------------------
+2025-08-19 02:35:26,050 - root - INFO - Current Learning Rate: 1.71e-04
+2025-08-19 02:35:26,050 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:39:45,108 - root - INFO - -------------------- Update 584 --------------------
+2025-08-19 02:39:45,108 - root - INFO - Current Learning Rate: 1.61e-04
+2025-08-19 02:39:45,109 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:44:01,829 - root - INFO - -------------------- Update 585 --------------------
+2025-08-19 02:44:01,829 - root - INFO - Current Learning Rate: 1.51e-04
+2025-08-19 02:44:01,829 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:48:18,355 - root - INFO - -------------------- Update 586 --------------------
+2025-08-19 02:48:18,355 - root - INFO - Current Learning Rate: 1.41e-04
+2025-08-19 02:48:18,355 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:52:29,443 - root - INFO - -------------------- Update 587 --------------------
+2025-08-19 02:52:29,443 - root - INFO - Current Learning Rate: 1.31e-04
+2025-08-19 02:52:29,443 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 02:56:42,407 - root - INFO - -------------------- Update 588 --------------------
+2025-08-19 02:56:42,408 - root - INFO - Current Learning Rate: 1.21e-04
+2025-08-19 02:56:42,408 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:01:03,423 - root - INFO - -------------------- Update 589 --------------------
+2025-08-19 03:01:03,423 - root - INFO - Current Learning Rate: 1.11e-04
+2025-08-19 03:01:03,423 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:05:19,818 - root - INFO - -------------------- Update 590 --------------------
+2025-08-19 03:05:19,818 - root - INFO - Current Learning Rate: 1.01e-04
+2025-08-19 03:05:19,818 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:09:40,623 - root - INFO - -------------------- Update 591 --------------------
+2025-08-19 03:09:40,623 - root - INFO - Current Learning Rate: 9.09e-05
+2025-08-19 03:09:40,623 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:14:00,931 - root - INFO - -------------------- Update 592 --------------------
+2025-08-19 03:14:00,932 - root - INFO - Current Learning Rate: 8.09e-05
+2025-08-19 03:14:00,932 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:18:10,676 - root - INFO - -------------------- Update 593 --------------------
+2025-08-19 03:18:10,676 - root - INFO - Current Learning Rate: 7.09e-05
+2025-08-19 03:18:10,676 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:22:33,958 - root - INFO - -------------------- Update 594 --------------------
+2025-08-19 03:22:33,958 - root - INFO - Current Learning Rate: 6.09e-05
+2025-08-19 03:22:33,958 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:26:48,792 - root - INFO - -------------------- Update 595 --------------------
+2025-08-19 03:26:48,792 - root - INFO - Current Learning Rate: 5.09e-05
+2025-08-19 03:26:48,792 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:30:53,730 - root - INFO - -------------------- Update 596 --------------------
+2025-08-19 03:30:53,730 - root - INFO - Current Learning Rate: 4.10e-05
+2025-08-19 03:30:53,730 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:35:12,789 - root - INFO - -------------------- Update 597 --------------------
+2025-08-19 03:35:12,790 - root - INFO - Current Learning Rate: 3.10e-05
+2025-08-19 03:35:12,790 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:39:25,278 - root - INFO - -------------------- Update 598 --------------------
+2025-08-19 03:39:25,279 - root - INFO - Current Learning Rate: 2.10e-05
+2025-08-19 03:39:25,279 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:43:36,090 - root - INFO - -------------------- Update 599 --------------------
+2025-08-19 03:43:36,090 - root - INFO - Current Learning Rate: 1.10e-05
+2025-08-19 03:43:36,090 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:47:42,387 - root - INFO - -------------------- Update 600 --------------------
+2025-08-19 03:47:42,387 - root - INFO - Current Learning Rate: 1.00e-06
+2025-08-19 03:47:42,387 - root - INFO - Best Update :520, Best Step :43, Best Reward: 0.8181818181818181
+2025-08-19 03:47:42,388 - root - INFO - time cost: 111138.74741292 s
