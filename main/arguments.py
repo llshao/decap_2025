@@ -14,7 +14,7 @@ def get_args() -> Any:
         help="Toggle learning rate annealing for policy and value networks")
     parser.add_argument("--anneal-lr-value", type=float, default=0.9997,
         help="Learning rate annealing factor for exponential decay")
-    parser.add_argument("--lr-schedule", type=str, default="cyclic", 
+    parser.add_argument("--lr-schedule", type=str, default="linear", 
         choices=["exponential", "step", "cosine", "linear", "cosine_warmup", "onecycle", "plateau", "cyclic", "restart"],
         help="Learning rate scheduling strategy")
     parser.add_argument("--lr-step-size", type=int, default=100,
@@ -45,7 +45,7 @@ def get_args() -> Any:
         help="if toggled, `torch.backends.cudnn.deterministic=False`")
     parser.add_argument("--cuda", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
         help="cuda or cpu")
-    parser.add_argument("--GPU", type=int, default=0, 
+    parser.add_argument("--GPU", type=int, default=2, 
         help="GPU number")
 
     # Algorithm specific arguments

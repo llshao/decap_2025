@@ -516,6 +516,7 @@ class DecapPlaceParallel(gym.Env):
             with Pool(min(SYSTEM_CORES, self.env_count // chunk_size)) as p:
                 reward_idx = p.map(self.cal_reward, arg_list, chunk_size)
                 p.close()
+                p.join()
             # sorted the reward based on env_idx
             vec_reward = [r[1] for r in sorted(reward_idx, key=lambda x: x[0])]
             vec_total_imped = [r[2] for r in sorted(reward_idx, key=lambda x: x[0])]

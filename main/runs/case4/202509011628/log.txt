@@ -1,0 +1,13 @@
+2025-09-01 16:28:23,246 - root - INFO - ===========================================
+2025-09-01 16:28:23,246 - root - INFO - Environment: 4, Parallel Number: 10
+2025-09-01 16:28:23,246 - root - INFO - Using GPU: cuda, 2
+2025-09-01 16:28:23,246 - root - INFO - Learning Rate: 2.50e-04
+2025-09-01 16:28:23,247 - root - INFO - LR Schedule: linear
+2025-09-01 16:28:23,247 - root - INFO - LR Warmup Steps: 50, LR Min: 1e-06
+2025-09-01 16:28:23,247 - root - INFO - ================ Training =================
+2025-09-01 16:28:54,035 - root - INFO - -------------------- Update 1 --------------------
+2025-09-01 16:28:54,036 - root - INFO - Current Learning Rate: 5.00e-06
+2025-09-01 16:28:54,036 - root - INFO - Best Update :1, Best Step :100, Best Reward: -0.0010778972999999983
+2025-09-01 16:29:31,006 - root - INFO - -------------------- Update 2 --------------------
+2025-09-01 16:29:31,006 - root - INFO - Current Learning Rate: 1.00e-05
+2025-09-01 16:29:31,007 - root - INFO - Best Update :1, Best Step :100, Best Reward: -0.0010778972999999983

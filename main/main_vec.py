@@ -5,7 +5,6 @@ import logging
 from typing import List, Tuple
 
 import numpy as np
-import torch
 
 from arguments import get_args
 from storage import RolloutStorage
@@ -13,10 +12,16 @@ import model1 as model
 from env import DecapPlaceParallel
 from ppo import PPO
 
+
+# Sets CUDA_VISIBLE_DEVICES BEFORE importing PyTorch
+args = get_args()
+os.environ["CUDA_VISIBLE_DEVICES"] = str(args.GPU)
+import torch
+
+
 torch.set_num_threads(1)
 
 if __name__ == '__main__':
-    args = get_args()
     now_time = time.strftime("%Y%m%d-%H%M", time.localtime(time.time()))
     t1 = ''.join([x for x in now_time if x.isdigit()])
     path = 'runs/case%s/' % (args.case_idx) + str(t1) + '/'
@@ -27,7 +32,6 @@ if __name__ == '__main__':
 
     # GPU
     device = torch.device("cuda" if torch.cuda.is_available() and args.cuda else "cpu")
-    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.GPU)
 
     # logging
     logger = logging.getLogger()
@@ -96,14 +100,27 @@ if __name__ == '__main__':
     BEST = [-50, 0, 0]  # reward, updates, steps
     BEST_Allocation = np.zeros([])
 
+    # Pre-allocate tensors to avoid repeated allocations
+    temp_obs = torch.zeros((args.num_envs,) + vec_env.SINGLE_OBSERVATION_SPACE_SHAPE, device=device)
+    temp_imped = torch.zeros((args.num_envs, 231*4), device=device)
+    temp_action_mask = torch.zeros((args.num_envs, vec_env.ACTION_LOCATIONS), device=device)
+    temp_done = torch.zeros(args.num_envs, device=device, dtype=torch.bool)
+    temp_reward = torch.zeros(args.num_envs, device=device)
+    
     start_time = time.time()
+    
     for update in range(1, num_updates + 1):
         vec_obs, vec_imped = vec_env.reset()
-        next_obs, next_imped = torch.Tensor(vec_obs).to(device), torch.Tensor(vec_imped).to(device)
-        vec_action_mask = torch.Tensor(np.stack(vec_env.vec_action_mask())).to(device)
-        rollouts.obs[0].copy_(next_obs)
-        rollouts.imped[0].copy_(next_imped)
-        rollouts.action_masks[0].copy_(vec_action_mask)
+        # Efficient tensor conversion with pre-allocated tensors
+        temp_obs.copy_(torch.from_numpy(vec_obs))
+        temp_imped.copy_(torch.from_numpy(vec_imped))
+        temp_action_mask.copy_(torch.from_numpy(np.stack(vec_env.vec_action_mask())))
+        
+        rollouts.obs[0].copy_(temp_obs)
+        rollouts.imped[0].copy_(temp_imped)
+        rollouts.action_masks[0].copy_(temp_action_mask)
+        
+        next_obs, next_imped, vec_action_mask = temp_obs, temp_imped, temp_action_mask
 
         for step in range(0, args.num_steps):
 
@@ -120,33 +137,43 @@ if __name__ == '__main__':
             #############################################################
             #############################################################
 
-            next_done = torch.Tensor(vec_done).to(device)
-            next_obs = torch.Tensor(vec_obs).to(device)
-            next_imped = torch.Tensor(vec_imped).to(device)
+            # Efficient tensor updates using pre-allocated tensors
+            temp_done.copy_(torch.from_numpy(np.array(vec_done)))
+            temp_obs.copy_(torch.from_numpy(vec_obs))
+            temp_imped.copy_(torch.from_numpy(vec_imped))
+            temp_reward.copy_(torch.from_numpy(np.array(vec_reward)))
+            
+            next_done, next_obs, next_imped = temp_done, temp_obs, temp_imped
 
-            if max(info["reward_now"]) > BEST[0]:
-                BEST = max(info["reward_now"]), update, step
-                index = max(enumerate(info["reward_now"]), key=lambda x: x[1])[0]
+            # Optimize: Calculate max only once and reuse
+            max_reward = max(info["reward_now"])
+            if max_reward > BEST[0]:
+                BEST = max_reward, update, step
+                index = info["reward_now"].index(max_reward)  # More efficient than enumerate+max
                 BEST_Allocation = vec_env.vec_cur_params_idx[index]
 
             # When the target impedance is satisfied or there is no valid positions, Done is True
             # The final reward is propagated to the before states.
+            reset_indices = []
             for idx in range(vec_env.env_count):
                 if vec_reward[idx] < info["his_reward"][idx]:
-                    vec_reward[idx] -= 0.1
+                    temp_reward[idx] = vec_reward[idx] - 0.1
                 if info["reward_now"][idx] > 0 or sum(vec_action_mask[idx]) == 0:
                     next_done[idx] = True
+                    reset_indices.append(idx)
+            
+            # Batch process environment resets to reduce overhead
+            if reset_indices:
+                for idx in reset_indices:
                     obs_done, imped_done = vec_env.reset_idx(idx)
-                    next_obs[idx], next_imped[idx] = torch.Tensor(obs_done), torch.Tensor(imped_done)
-                    # vec_reward[idx] = info["reward_now"][idx]
-                    # indices = (rollouts.dones[:step-1][idx]==1).nonzero(as_tuple=True)[0]
-                    # last_step = indices[-1].item() if indices.numel() > 0 else step-1
-                    # rollouts.rewards[:last_step, :] += info["reward_now"][idx]
+                    temp_obs[idx].copy_(torch.from_numpy(obs_done))
+                    temp_imped[idx].copy_(torch.from_numpy(imped_done))
 
-            vec_action_mask = torch.Tensor(np.stack(vec_env.vec_action_mask())).to(device)
+            temp_action_mask.copy_(torch.from_numpy(np.stack(vec_env.vec_action_mask())))
+            vec_action_mask = temp_action_mask
 
             rollouts.insert(step, next_obs, next_imped, vec_action.reshape([-1, vec_env.ACTION_SPACE_SHAPE[0]]),
-                            vec_logprob, torch.tensor(vec_reward).view(-1),next_done, vec_value.flatten(),
+                            vec_logprob, temp_reward.view(-1), next_done, vec_value.flatten(),
                             vec_action_mask)
 
         with torch.no_grad():
@@ -161,7 +188,7 @@ if __name__ == '__main__':
                                                                                                            vec_env.ACTION_SPACE_SHAPE)
         
         # Step learning rate scheduler
-        current_reward = max(info["reward_now"]) if info["reward_now"] else 0.0
+        current_reward = max_reward if 'max_reward' in locals() else (max(info["reward_now"]) if info["reward_now"] else 0.0)
         current_lr = agent.step_lr_scheduler(update, current_reward)
         learning_rates[update - 1] = current_lr
         
@@ -173,7 +200,8 @@ if __name__ == '__main__':
         np.savetxt(path + 'allocation.txt', BEST_Allocation)
 
     end_time = time.time()
-    logging.info('time cost: {} s'.format(end_time - start_time))
+    total_time = end_time - start_time
+    logging.info('time cost: {} s'.format(total_time))
 
     # save network parameters
     torch.save(actor_critic, path + 'vec_agent.pth')
