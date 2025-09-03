@@ -18,7 +18,7 @@ import numpy as np
 
 import config
 # Constants
-SYSTEM_CORES = 50  # Maximum number of cores for multi-processing
+SYSTEM_CORES = 20  # Maximum number of cores for multi-processing
 NCOL, NROW = 11, 11
 DEFAULT_CAP_VALUE = 2000
 KNEE_FREQUENCY = 3.5e9
@@ -37,7 +37,7 @@ PORT_FILES = ['port1_impeval.txt', 'port2_impeval.txt',
 COMMANDS = [["ngspice", file] for file in EXECUTE_FILES]
 
 # Cache configuration
-MAX_CACHE_SIZE = 200000  # Maximum number of cached results
+MAX_CACHE_SIZE = 15000  # Maximum number of cached results
 CACHE_DIR = '.cache'   # Directory for persistent cache files
 
 class RewardCache:
