@@ -92,6 +92,7 @@ class Decoder(nn.Module):
         super().__init__()
         
         self.use_batch_norm = use_batch_norm
+        self.output_channels = output_channels
         
         # 上采样层1: 2x2 -> 4x4
         self.deconv1 = layer_init(nn.ConvTranspose2d(256, 256, kernel_size=3, stride=2, padding=1, output_padding=1))
@@ -109,11 +110,11 @@ class Decoder(nn.Module):
         self.conv1 = layer_init(nn.Conv2d(64, 32, kernel_size=3, padding=1))
         self.bn4 = nn.BatchNorm2d(32) if use_batch_norm else nn.Identity()
         
-        # 输出层
+        # 输出层 - 对于双头架构，输出2个通道
         self.conv_out = layer_init(nn.Conv2d(32, output_channels, kernel_size=3, padding=1))
         
-        # 维度转换
-        self.transpose = Transpose((0, 2, 3, 1))  # NCHW -> NHWC
+        # 全局平均池化层 - 将空间维度从11x11压缩到11维
+        self.global_pool = nn.AdaptiveAvgPool2d((1, 11))  # [batch, output_channels, 1, 11]
         
         # 激活函数
         self.activation = nn.ReLU(inplace=False)
@@ -129,10 +130,13 @@ class Decoder(nn.Module):
         x = self.activation(self.bn4(self.conv1(x)))
         
         # 输出层
-        x = self.conv_out(x)
+        x = self.conv_out(x)  # [batch, output_channels, 11, 11]
         
-        # 维度转换: [batch, C, 11, 11] -> [batch, 11, 11, C]
-        return self.transpose(x)
+        # 全局平均池化 - 压缩空间维度
+        x = self.global_pool(x)  # [batch, output_channels, 1, 11]
+        x = x.squeeze(2)  # [batch, output_channels, 11]
+        
+        return x
 
 
 class PPONetwork(nn.Module):
@@ -163,8 +167,9 @@ class PPONetwork(nn.Module):
         # 编码器（输入通道数包括原始输入和阻抗特征）
         self.encoder = Encoder(input_channels + 2, use_batch_norm)
         
-        # Actor网络（策略网络）
-        self.actor = Decoder(len(env.ACTION_MEANINGS), use_batch_norm)
+        # Actor网络（策略网络）- 使用双头架构：行和列
+        self.actor = Decoder(2, use_batch_norm)  # 2 heads: row and column
+        self.action_dim = 11  # Each head has 11 dimensions
         
         # Critic网络（价值网络)
         self.critic = nn.Sequential(
@@ -183,6 +188,37 @@ class PPONetwork(nn.Module):
         batch_size = imped.shape[0]
         processed = self.imped_fc(imped)
         return processed.reshape(batch_size, 2, 11, 11)
+
+    def _action_to_row_col(self, action_idx: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
+        """将动作索引转换为行列坐标"""
+        row = action_idx // self.action_dim
+        col = action_idx % self.action_dim
+        return row, col
+
+    def _row_col_to_action(self, row: torch.Tensor, col: torch.Tensor) -> torch.Tensor:
+        """将行列坐标转换为动作索引"""
+        return row * self.action_dim + col
+
+    def _compute_joint_logits(self, row_logits: torch.Tensor, col_logits: torch.Tensor) -> torch.Tensor:
+        """计算联合概率的logits (121维)"""
+        batch_size = row_logits.shape[0]
+        
+        # 计算联合概率: p(i,j) = p_row(i) * p_col(j)
+        # 在log空间: log(p(i,j)) = log(p_row(i)) + log(p_col(j))
+        row_probs = torch.softmax(row_logits, dim=-1)  # [batch, 11]
+        col_probs = torch.softmax(col_logits, dim=-1)  # [batch, 11]
+        
+        # 计算所有121个组合的联合概率
+        # 使用广播机制处理批次维度
+        row_probs_expanded = row_probs.unsqueeze(2)  # [batch, 11, 1]
+        col_probs_expanded = col_probs.unsqueeze(1)  # [batch, 1, 11]
+        joint_probs = row_probs_expanded * col_probs_expanded  # [batch, 11, 11]
+        joint_probs = joint_probs.reshape(batch_size, -1)  # [batch, 121]
+        
+        # 转换回logits空间
+        joint_logits = torch.log(joint_probs + 1e-8)  # 添加小常数避免log(0)
+        
+        return joint_logits
 
 
     def _encode_features(self, x: torch.Tensor, imped: torch.Tensor) -> torch.Tensor:
@@ -220,12 +256,12 @@ class PPONetwork(nn.Module):
                            action_mask: torch.Tensor, 
                            action: Optional[torch.Tensor] = None) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
         """
-        获取动作和价值
+        获取动作和价值 - 使用双头架构
         
         Args:
             x: 状态特征
             imped: 阻抗特征
-            action_mask: 动作掩码
+            action_mask: 动作掩码 (121维)
             action: 可选的指定动作
             
         Returns:
@@ -234,34 +270,33 @@ class PPONetwork(nn.Module):
         # 编码特征
         encoded_features = self._encode_features(x, imped)
         
-        # 获取动作logits
-        logits = self.actor(encoded_features)
-        logits = logits.reshape(encoded_features.shape[0], -1)
+        # 获取双头logits [batch, 2, 11]
+        dual_head_logits = self.actor(encoded_features)
         
-        # 分割logits和掩码
-        split_logits = torch.split(logits, self.action_space.tolist(), dim=1)
-        split_action_masks = torch.split(action_mask, self.action_space.tolist(), dim=1)
+        # 分离行和列的logits
+        row_logits = dual_head_logits[:, 0, :]  # [batch, 11]
+        col_logits = dual_head_logits[:, 1, :]  # [batch, 11]
+        
+        # 计算联合概率的logits (121维)
+        joint_logits = self._compute_joint_logits(row_logits, col_logits)  # [batch, 121]
+        
+        # 应用原始121维掩码
+        masked_logits = torch.where(action_mask.bool(), joint_logits, torch.tensor(-1e8, device=joint_logits.device))
         
         # 创建掩码分类分布
-        multi_categoricals = [
-            CategoricalMasked(logits=logits_i, masks=mask_i) 
-            for logits_i, mask_i in zip(split_logits, split_action_masks)
-        ]
+        categorical = CategoricalMasked(logits=masked_logits, masks=action_mask.bool())
         
         # 采样或使用指定动作
         if action is None:
-            action = torch.stack([categorical.sample() for categorical in multi_categoricals])
+            action = categorical.sample()
         
         # 计算对数概率和熵
-        logprob = torch.stack([
-            categorical.log_prob(a) 
-            for a, categorical in zip(action, multi_categoricals)
-        ])
-        entropy = torch.stack([categorical.entropy() for categorical in multi_categoricals])
+        logprob = categorical.log_prob(action)
+        entropy = categorical.entropy()
         
         # 获取价值
         value = self.critic(encoded_features)
         
-        return action.T, logprob.sum(0), entropy.sum(0), value
+        return action, logprob, entropy, value
     
 
