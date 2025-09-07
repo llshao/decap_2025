@@ -9,7 +9,7 @@ import numpy as np
 from arguments import get_args
 from storage import RolloutStorage
 import model1 as model
-from env import DecapPlaceParallel
+from env import DEFAULT_CAP_VALUE, NCOL, NROW, DecapPlaceParallel
 from ppo import PPO
 
 
@@ -108,6 +108,8 @@ if __name__ == '__main__':
     temp_reward = torch.zeros(args.num_envs, device=device)
     
     start_time = time.time()
+    # setup the initial best decap values
+    BEST_DecapValues = DEFAULT_CAP_VALUE*NCOL*NROW
     
     for update in range(1, num_updates + 1):
         vec_obs, vec_imped = vec_env.reset()
@@ -157,8 +159,15 @@ if __name__ == '__main__':
             reset_indices = []
             for idx in range(vec_env.env_count):
                 if vec_reward[idx] < info["his_reward"][idx]:
-                    temp_reward[idx] = vec_reward[idx] - 0.1
+                    temp_reward[idx] = vec_reward[idx] - 0.1 # penalty for reward decrease
                 if info["reward_now"][idx] > 0 or sum(vec_action_mask[idx]) == 0:
+                    next_done[idx] = True
+                    reset_indices.append(idx)
+                    # update BEST_DecapValues for reward > 0
+                    if BEST_DecapValues > vec_env.vec_cur_params_idx[idx].sum():
+                        BEST_DecapValues = vec_env.vec_cur_params_idx[idx].sum()
+                elif vec_env.vec_cur_params_idx[idx].sum() >= BEST_DecapValues:
+                    temp_reward[idx] = vec_reward[idx] - 0.1 # penalty for Decapvalues 
                     next_done[idx] = True
                     reset_indices.append(idx)
             
