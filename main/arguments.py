@@ -51,7 +51,7 @@ def get_args() -> Any:
     # Algorithm specific arguments
     parser.add_argument("--num-steps", type=int, default=128,
         help="the number of steps to run in each environment per policy rollout")
-    parser.add_argument("--case-idx", type=int, default=4,
+    parser.add_argument("--case-idx", type=int, default=5,
         help="the idx of parallel environments")
     parser.add_argument("--num-envs", type=int, default=10,
                         help="the number of parallel environments")

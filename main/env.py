@@ -367,8 +367,6 @@ class DecapPlaceParallel(gym.Env):
         for idx in range(self.env_count):
             action_idx = int(action[idx])
             self.vec_cur_params_idx[idx][action_idx] = DEFAULT_CAP_VALUE
-            self.vec_dones[idx] = False
-
         # Get new observations and rewards
         state = self.vec_get_obs()
         cost_negative, total_imped = self.vec_cal_reward(use_pool=True)
@@ -503,6 +501,20 @@ class DecapPlaceParallel(gym.Env):
         self.reward_cache.put(self.env_case_num[env_idx], self.vec_cur_params_idx[env_idx], total_cost, all_impedance_vals)
 
         return env_idx, total_cost, all_impedance_vals
+
+    def cal_reward_sparse(self, env_idx: int) -> Tuple[int, float, np.ndarray]:
+        """Calculate reward only when the environment is done.
+        
+        Args:
+            env_idx: Environment index
+            
+        Returns:
+            Tuple of (env_idx, reward, impedance_array)
+        """
+        if self.vec_dones[env_idx]:
+            return self.cal_reward(env_idx)
+        else:
+            return env_idx, 0, np.zeros(4)
 
     def vec_cal_reward(self, use_pool=False):
         """

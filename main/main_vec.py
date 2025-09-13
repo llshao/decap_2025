@@ -109,7 +109,7 @@ if __name__ == '__main__':
     
     start_time = time.time()
     # setup the initial best decap values
-    BEST_DecapValues = DEFAULT_CAP_VALUE*NCOL*NROW
+    # BEST_DecapValues = DEFAULT_CAP_VALUE*NCOL*NROW
     
     for update in range(1, num_updates + 1):
         vec_obs, vec_imped = vec_env.reset()
@@ -164,12 +164,13 @@ if __name__ == '__main__':
                     next_done[idx] = True
                     reset_indices.append(idx)
                     # update BEST_DecapValues for reward > 0
-                    if BEST_DecapValues > vec_env.vec_cur_params_idx[idx].sum():
-                        BEST_DecapValues = vec_env.vec_cur_params_idx[idx].sum()
-                elif vec_env.vec_cur_params_idx[idx].sum() >= BEST_DecapValues:
-                    temp_reward[idx] = vec_reward[idx] - 0.1 # penalty for Decapvalues 
-                    next_done[idx] = True
-                    reset_indices.append(idx)
+                    # if BEST_DecapValues > vec_env.vec_cur_params_idx[idx].sum():
+                    #     BEST_DecapValues = vec_env.vec_cur_params_idx[idx].sum()
+                    #     print(f"BEST_DecapValues: {BEST_DecapValues}")
+                # elif vec_env.vec_cur_params_idx[idx].sum() >= BEST_DecapValues:
+                #     # temp_reward[idx] = vec_reward[idx] - 0.1 # penalty for Decapvalues 
+                #     next_done[idx] = True
+                #     reset_indices.append(idx)
             
             # Batch process environment resets to reduce overhead
             if reset_indices:

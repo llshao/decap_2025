@@ -125,8 +125,9 @@ class PPO():
                 # Entropy loss
                 entropy_loss = entropy.mean()
                 # loss = policy_loss - entropy * entropy_coefficient + value_loss * value_coefficient
+                # parser.add_argument("--ent-coef", type=float, default=0.01, help="coefficient of the entropy")
+                # parser.add_argument("--vf-coef", type=float, default=0.5,help="coefficient of the value function")
                 loss = pg_loss - self.ent_coef * entropy_loss + v_loss * self.vf_coef
-
                 self.optimizer.zero_grad()
                 loss.backward()
                 nn.utils.clip_grad_norm_(self.actor_critic.parameters(), self.max_grad_norm)
